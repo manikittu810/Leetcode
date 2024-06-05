@@ -15,6 +15,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0557-reverse-words-in-a-string-iii](https://github.com/manikittu810/Leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
 | [1454-remove-palindromic-subsequences](https://github.com/manikittu810/Leetcode/tree/master/1454-remove-palindromic-subsequences) |
 | [2099-number-of-strings-that-appear-as-substrings-in-word](https://github.com/manikittu810/Leetcode/tree/master/2099-number-of-strings-that-appear-as-substrings-in-word) |
+| [2186-count-vowel-substrings-of-a-string](https://github.com/manikittu810/Leetcode/tree/master/2186-count-vowel-substrings-of-a-string) |
 | [2977-check-if-a-string-is-an-acronym-of-words](https://github.com/manikittu810/Leetcode/tree/master/2977-check-if-a-string-is-an-acronym-of-words) |
 | [3055-maximum-odd-binary-number](https://github.com/manikittu810/Leetcode/tree/master/3055-maximum-odd-binary-number) |
 | [3353-existence-of-a-substring-in-a-string-and-its-reverse](https://github.com/manikittu810/Leetcode/tree/master/3353-existence-of-a-substring-in-a-string-and-its-reverse) |
@@ -22,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/manikittu810/Leetcode/tree/master/0013-roman-to-integer) |
+| [2186-count-vowel-substrings-of-a-string](https://github.com/manikittu810/Leetcode/tree/master/2186-count-vowel-substrings-of-a-string) |
 | [3353-existence-of-a-substring-in-a-string-and-its-reverse](https://github.com/manikittu810/Leetcode/tree/master/3353-existence-of-a-substring-in-a-string-and-its-reverse) |
 # Math
 |  |
