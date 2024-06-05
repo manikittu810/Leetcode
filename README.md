@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/manikittu810/Leetcode/tree/master/0013-roman-to-integer) |
 | [0067-add-binary](https://github.com/manikittu810/Leetcode/tree/master/0067-add-binary) |
 | [0557-reverse-words-in-a-string-iii](https://github.com/manikittu810/Leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
+| [2099-number-of-strings-that-appear-as-substrings-in-word](https://github.com/manikittu810/Leetcode/tree/master/2099-number-of-strings-that-appear-as-substrings-in-word) |
 | [2977-check-if-a-string-is-an-acronym-of-words](https://github.com/manikittu810/Leetcode/tree/master/2977-check-if-a-string-is-an-acronym-of-words) |
 | [3055-maximum-odd-binary-number](https://github.com/manikittu810/Leetcode/tree/master/3055-maximum-odd-binary-number) |
 # Hash Table
