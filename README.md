@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/manikittu810/Leetcode/tree/master/0013-roman-to-integer) |
 | [0067-add-binary](https://github.com/manikittu810/Leetcode/tree/master/0067-add-binary) |
 | [0557-reverse-words-in-a-string-iii](https://github.com/manikittu810/Leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
+| [3055-maximum-odd-binary-number](https://github.com/manikittu810/Leetcode/tree/master/3055-maximum-odd-binary-number) |
 # Hash Table
 |  |
 | ------- |
@@ -21,6 +22,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0013-roman-to-integer](https://github.com/manikittu810/Leetcode/tree/master/0013-roman-to-integer) |
 | [0067-add-binary](https://github.com/manikittu810/Leetcode/tree/master/0067-add-binary) |
+| [3055-maximum-odd-binary-number](https://github.com/manikittu810/Leetcode/tree/master/3055-maximum-odd-binary-number) |
 # Bit Manipulation
 |  |
 | ------- |
@@ -29,3 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0067-add-binary](https://github.com/manikittu810/Leetcode/tree/master/0067-add-binary) |
+# Greedy
+|  |
+| ------- |
+| [3055-maximum-odd-binary-number](https://github.com/manikittu810/Leetcode/tree/master/3055-maximum-odd-binary-number) |
