@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0013-roman-to-integer](https://github.com/manikittu810/Leetcode/tree/master/0013-roman-to-integer) |
 | [0067-add-binary](https://github.com/manikittu810/Leetcode/tree/master/0067-add-binary) |
+| [0521-longest-uncommon-subsequence-i](https://github.com/manikittu810/Leetcode/tree/master/0521-longest-uncommon-subsequence-i) |
 | [0557-reverse-words-in-a-string-iii](https://github.com/manikittu810/Leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
 | [0696-count-binary-substrings](https://github.com/manikittu810/Leetcode/tree/master/0696-count-binary-substrings) |
 | [1454-remove-palindromic-subsequences](https://github.com/manikittu810/Leetcode/tree/master/1454-remove-palindromic-subsequences) |
