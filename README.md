@@ -53,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 # Array
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/manikittu810/Leetcode/tree/master/0053-maximum-subarray) |
 | [2977-check-if-a-string-is-an-acronym-of-words](https://github.com/manikittu810/Leetcode/tree/master/2977-check-if-a-string-is-an-acronym-of-words) |
 # Linked List
 |  |
@@ -64,3 +65,11 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0206-reverse-linked-list](https://github.com/manikittu810/Leetcode/tree/master/0206-reverse-linked-list) |
+# Divide and Conquer
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/manikittu810/Leetcode/tree/master/0053-maximum-subarray) |
+# Dynamic Programming
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/manikittu810/Leetcode/tree/master/0053-maximum-subarray) |
