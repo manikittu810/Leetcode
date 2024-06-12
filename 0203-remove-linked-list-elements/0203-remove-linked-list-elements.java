@@ -14,20 +14,20 @@ class Solution {
             return null;
         }
         ListNode dummy = new ListNode(-1);
-        ListNode tail = dummy;
+        dummy.next = head;
         ListNode cur = head;
+        ListNode prev = dummy;
 
         while(cur != null){
             if(cur.val != val){
-                tail.next = cur;
-                tail = tail.next;
-                cur =cur.next;
+                 prev = cur;
             }
             else if(cur.val==val){
-                cur = cur.next;
+                prev.next = cur.next;
+               
             }
+            cur=cur.next;
         }
-        tail.next =null;
         return dummy.next;
     }
 }
