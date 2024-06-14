@@ -34,6 +34,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/manikittu810/Leetcode/tree/master/0013-roman-to-integer) |
 | [0138-copy-list-with-random-pointer](https://github.com/manikittu810/Leetcode/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/manikittu810/Leetcode/tree/master/0141-linked-list-cycle) |
+| [0146-lru-cache](https://github.com/manikittu810/Leetcode/tree/master/0146-lru-cache) |
 | [0160-intersection-of-two-linked-lists](https://github.com/manikittu810/Leetcode/tree/master/0160-intersection-of-two-linked-lists) |
 | [2186-count-vowel-substrings-of-a-string](https://github.com/manikittu810/Leetcode/tree/master/2186-count-vowel-substrings-of-a-string) |
 | [3353-existence-of-a-substring-in-a-string-and-its-reverse](https://github.com/manikittu810/Leetcode/tree/master/3353-existence-of-a-substring-in-a-string-and-its-reverse) |
@@ -74,6 +75,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0138-copy-list-with-random-pointer](https://github.com/manikittu810/Leetcode/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/manikittu810/Leetcode/tree/master/0141-linked-list-cycle) |
 | [0143-reorder-list](https://github.com/manikittu810/Leetcode/tree/master/0143-reorder-list) |
+| [0146-lru-cache](https://github.com/manikittu810/Leetcode/tree/master/0146-lru-cache) |
 | [0160-intersection-of-two-linked-lists](https://github.com/manikittu810/Leetcode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0203-remove-linked-list-elements](https://github.com/manikittu810/Leetcode/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/manikittu810/Leetcode/tree/master/0206-reverse-linked-list) |
@@ -103,3 +105,11 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0287-find-the-duplicate-number](https://github.com/manikittu810/Leetcode/tree/master/0287-find-the-duplicate-number) |
+# Design
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/manikittu810/Leetcode/tree/master/0146-lru-cache) |
+# Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/manikittu810/Leetcode/tree/master/0146-lru-cache) |
