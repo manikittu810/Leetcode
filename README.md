@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0013-roman-to-integer](https://github.com/manikittu810/Leetcode/tree/master/0013-roman-to-integer) |
 | [0067-add-binary](https://github.com/manikittu810/Leetcode/tree/master/0067-add-binary) |
+| [0242-valid-anagram](https://github.com/manikittu810/Leetcode/tree/master/0242-valid-anagram) |
 | [0521-longest-uncommon-subsequence-i](https://github.com/manikittu810/Leetcode/tree/master/0521-longest-uncommon-subsequence-i) |
 | [0557-reverse-words-in-a-string-iii](https://github.com/manikittu810/Leetcode/tree/master/0557-reverse-words-in-a-string-iii) |
 | [0696-count-binary-substrings](https://github.com/manikittu810/Leetcode/tree/master/0696-count-binary-substrings) |
@@ -37,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0146-lru-cache](https://github.com/manikittu810/Leetcode/tree/master/0146-lru-cache) |
 | [0160-intersection-of-two-linked-lists](https://github.com/manikittu810/Leetcode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0217-contains-duplicate](https://github.com/manikittu810/Leetcode/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/manikittu810/Leetcode/tree/master/0242-valid-anagram) |
 | [2186-count-vowel-substrings-of-a-string](https://github.com/manikittu810/Leetcode/tree/master/2186-count-vowel-substrings-of-a-string) |
 | [3353-existence-of-a-substring-in-a-string-and-its-reverse](https://github.com/manikittu810/Leetcode/tree/master/3353-existence-of-a-substring-in-a-string-and-its-reverse) |
 # Math
@@ -131,3 +133,4 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0217-contains-duplicate](https://github.com/manikittu810/Leetcode/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/manikittu810/Leetcode/tree/master/0242-valid-anagram) |
