@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/manikittu810/Leetcode/tree/master/0013-roman-to-integer) |
+| [0049-group-anagrams](https://github.com/manikittu810/Leetcode/tree/master/0049-group-anagrams) |
 | [0067-add-binary](https://github.com/manikittu810/Leetcode/tree/master/0067-add-binary) |
 | [0242-valid-anagram](https://github.com/manikittu810/Leetcode/tree/master/0242-valid-anagram) |
 | [0521-longest-uncommon-subsequence-i](https://github.com/manikittu810/Leetcode/tree/master/0521-longest-uncommon-subsequence-i) |
@@ -34,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0001-two-sum](https://github.com/manikittu810/Leetcode/tree/master/0001-two-sum) |
 | [0013-roman-to-integer](https://github.com/manikittu810/Leetcode/tree/master/0013-roman-to-integer) |
+| [0049-group-anagrams](https://github.com/manikittu810/Leetcode/tree/master/0049-group-anagrams) |
 | [0138-copy-list-with-random-pointer](https://github.com/manikittu810/Leetcode/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/manikittu810/Leetcode/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/manikittu810/Leetcode/tree/master/0146-lru-cache) |
@@ -67,6 +69,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/manikittu810/Leetcode/tree/master/0001-two-sum) |
+| [0049-group-anagrams](https://github.com/manikittu810/Leetcode/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/manikittu810/Leetcode/tree/master/0053-maximum-subarray) |
 | [0217-contains-duplicate](https://github.com/manikittu810/Leetcode/tree/master/0217-contains-duplicate) |
 | [0287-find-the-duplicate-number](https://github.com/manikittu810/Leetcode/tree/master/0287-find-the-duplicate-number) |
@@ -134,5 +137,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 # Sorting
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/manikittu810/Leetcode/tree/master/0049-group-anagrams) |
 | [0217-contains-duplicate](https://github.com/manikittu810/Leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/manikittu810/Leetcode/tree/master/0242-valid-anagram) |
