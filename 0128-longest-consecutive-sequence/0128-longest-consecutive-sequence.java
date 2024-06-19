@@ -3,29 +3,23 @@ class Solution {
         if(nums.length == 0){
             return 0;
         }
-        TreeSet<Integer> treeSet = new TreeSet<>();
-
-        for(int i=0;i<nums.length;i++){
-            treeSet.add(nums[i]);
+        Set<Integer> s = new HashSet<>();
+        for(int i :nums){
+            s.add(i);
         }
-
-        int a[]=new int[treeSet.size()];
-        int idx = 0;
-        for(int i : treeSet){
-            a[idx++] = i;
-        }
-        int count = 1,ans=1;
-        for(int i=1;i<a.length;i++){
-            if(a[i]==a[i-1]+1){
-                count++;
-                if(ans<count){
-                    ans = count;
+        int longStreak = 1;
+        for(int i : s){
+            if(!s.contains(i-1)){
+                int curNum = i;
+                int curStreak = 1;
+                while(s.contains(curNum+1)){
+                    curNum +=1;
+                    curStreak +=1;
                 }
+            longStreak = Math.max(curStreak,longStreak);
+
             }
-                else{
-                count=1;
-                }
         }
-return ans;
+return longStreak;
     }
 }
