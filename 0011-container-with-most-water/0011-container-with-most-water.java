@@ -10,11 +10,7 @@ class Solution {
             if(a[l]<a[r]){
                 l++;
             }
-            else if(a[l]>a[r]){
-                r--;
-            }
             else{
-                l++;
                 r--;
             }
         }
