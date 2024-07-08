@@ -215,12 +215,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/manikittu810/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0940-fruit-into-baskets](https://github.com/manikittu810/Leetcode/tree/master/0940-fruit-into-baskets) |
 | [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/manikittu810/Leetcode/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
 ## Hash Table
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/manikittu810/Leetcode/tree/master/0013-roman-to-integer) |
 | [0347-top-k-frequent-elements](https://github.com/manikittu810/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0940-fruit-into-baskets](https://github.com/manikittu810/Leetcode/tree/master/0940-fruit-into-baskets) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -252,5 +254,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sliding Window
 |  |
 | ------- |
+| [0940-fruit-into-baskets](https://github.com/manikittu810/Leetcode/tree/master/0940-fruit-into-baskets) |
 | [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/manikittu810/Leetcode/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
 <!---LeetCode Topics End-->
