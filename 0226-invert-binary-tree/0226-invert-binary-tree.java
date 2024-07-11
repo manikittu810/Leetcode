@@ -23,10 +23,9 @@ private  static TreeNode isMirror(TreeNode root){
         return null;
     }
     TreeNode leftST = isMirror(root.left);
-    TreeNode temp = leftST;
     TreeNode rightST = isMirror(root.right);
-    root.left = root.right;
-    root.right = temp;
+    root.left = rightST;
+    root.right = leftST;
     return root;
 }
 }
