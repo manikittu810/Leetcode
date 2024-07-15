@@ -14,23 +14,18 @@
  * }
  */
 class Solution {
-    Integer sum = 0;
-    public int rangeSumBST(TreeNode root, int l, int h) {
-       
-            if(root == null){
+    public int rangeSumBST(TreeNode root, int low, int high) {
+        int res = 0;
+        if(root == null){
             return 0;
         }
-        if(root.val < l){
-            rangeSumBST(root.right,l,h);
+        if(root.val < low){
+            return rangeSumBST(root.right,low,high);
         }
-        if(root.val>=l && root.val <= h){
-            sum+=root.val;
-            rangeSumBST(root.left,l,h);
-            rangeSumBST(root.right,l,h);
+        else if(root.val > high){
+            return rangeSumBST(root.left,low,high);
         }
-        if(root.val>h){
-            rangeSumBST(root.left,l,h);
-        }
-        return sum;
+
+        return root.val + rangeSumBST(root.left,low,high) + rangeSumBST(root.right,low,high);
     }
 }
