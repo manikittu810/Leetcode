@@ -15,24 +15,24 @@
  */
 class Solution {
     public boolean findTarget(TreeNode root, int k) {
-       Map<Integer,Integer> map = new HashMap<>();
-        return search(root,k,map);
+       Set<Integer> set = new HashSet<>();
+        return search(root,k,set);
 
     }
-    public boolean search(TreeNode root,int k,Map<Integer,Integer> map ){
+    public boolean search(TreeNode root,int k,Set<Integer> set ){
         if(root == null){
             return false;
         }
-        
-        
-        if(!map.containsKey(k-root.val)){
-            map.put(root.val,1);
-        }
-        else{
+        if(search(root.left,k,set)){
             return true;
         }
-        return search(root.left,k,map) || 
-        search(root.right,k,map);
+        
+        if(set.contains(k-root.val)){
+            return true;
+        }
+        set.add(root.val);
 
+    return search(root.right,k,set);
+        
     }
 }
