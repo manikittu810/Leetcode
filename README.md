@@ -273,6 +273,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/manikittu810/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0783-search-in-a-binary-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0783-search-in-a-binary-search-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/manikittu810/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
+| [0933-increasing-order-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0933-increasing-order-search-tree) |
 | [0975-range-sum-of-bst](https://github.com/manikittu810/Leetcode/tree/master/0975-range-sum-of-bst) |
 ## Depth-First Search
 |  |
@@ -286,6 +287,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0530-minimum-absolute-difference-in-bst](https://github.com/manikittu810/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/manikittu810/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/manikittu810/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
+| [0933-increasing-order-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0933-increasing-order-search-tree) |
 | [0975-range-sum-of-bst](https://github.com/manikittu810/Leetcode/tree/master/0975-range-sum-of-bst) |
 ## Breadth-First Search
 |  |
@@ -312,6 +314,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/manikittu810/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0783-search-in-a-binary-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0783-search-in-a-binary-search-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/manikittu810/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
+| [0933-increasing-order-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0933-increasing-order-search-tree) |
 | [0975-range-sum-of-bst](https://github.com/manikittu810/Leetcode/tree/master/0975-range-sum-of-bst) |
 ## Binary Search Tree
 |  |
@@ -321,9 +324,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/manikittu810/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0783-search-in-a-binary-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0783-search-in-a-binary-search-tree) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/manikittu810/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
+| [0933-increasing-order-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0933-increasing-order-search-tree) |
 | [0975-range-sum-of-bst](https://github.com/manikittu810/Leetcode/tree/master/0975-range-sum-of-bst) |
 ## Two Pointers
 |  |
 | ------- |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/manikittu810/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+## Stack
+|  |
+| ------- |
+| [0933-increasing-order-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0933-increasing-order-search-tree) |
 <!---LeetCode Topics End-->
