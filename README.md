@@ -238,6 +238,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/manikittu810/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/manikittu810/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 ## Bucket Sort
 |  |
 | ------- |
@@ -272,6 +273,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0530-minimum-absolute-difference-in-bst](https://github.com/manikittu810/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/manikittu810/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0783-search-in-a-binary-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0783-search-in-a-binary-search-tree) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/manikittu810/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/manikittu810/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0933-increasing-order-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0933-increasing-order-search-tree) |
 | [0975-range-sum-of-bst](https://github.com/manikittu810/Leetcode/tree/master/0975-range-sum-of-bst) |
@@ -313,6 +315,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0530-minimum-absolute-difference-in-bst](https://github.com/manikittu810/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/manikittu810/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0783-search-in-a-binary-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0783-search-in-a-binary-search-tree) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/manikittu810/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/manikittu810/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0933-increasing-order-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0933-increasing-order-search-tree) |
 | [0975-range-sum-of-bst](https://github.com/manikittu810/Leetcode/tree/master/0975-range-sum-of-bst) |
@@ -323,6 +326,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0530-minimum-absolute-difference-in-bst](https://github.com/manikittu810/Leetcode/tree/master/0530-minimum-absolute-difference-in-bst) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/manikittu810/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0783-search-in-a-binary-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0783-search-in-a-binary-search-tree) |
+| [0789-kth-largest-element-in-a-stream](https://github.com/manikittu810/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/manikittu810/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0933-increasing-order-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0933-increasing-order-search-tree) |
 | [0975-range-sum-of-bst](https://github.com/manikittu810/Leetcode/tree/master/0975-range-sum-of-bst) |
@@ -334,4 +338,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0933-increasing-order-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0933-increasing-order-search-tree) |
+## Design
+|  |
+| ------- |
+| [0789-kth-largest-element-in-a-stream](https://github.com/manikittu810/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
+## Data Stream
+|  |
+| ------- |
+| [0789-kth-largest-element-in-a-stream](https://github.com/manikittu810/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 <!---LeetCode Topics End-->
