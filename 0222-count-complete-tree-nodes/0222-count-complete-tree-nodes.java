@@ -15,11 +15,25 @@
  */
 class Solution {
     public int countNodes(TreeNode root) {
-        if(root ==null){
+        if(root == null){
             return 0;
         }
-        
-        int sum =  countNodes(root.left) + countNodes(root.right);
-        return sum+1;
+        int leftHeight = height(root.left);
+        int rightHeight = height(root.right);
+
+        if(leftHeight == rightHeight){
+            return (1<<leftHeight) + countNodes(root.right);
+        }
+        else{
+            return (1<<rightHeight) + countNodes(root.left);
+        }
+    }
+    public int height(TreeNode root){
+        int height =0;
+        while(root!=null){
+            height++;
+            root = root.left;
+        }
+        return height;
     }
 }
