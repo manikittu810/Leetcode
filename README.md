@@ -280,6 +280,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0563-binary-tree-tilt](https://github.com/manikittu810/Leetcode/tree/master/0563-binary-tree-tilt) |
 | [0572-subtree-of-another-tree](https://github.com/manikittu810/Leetcode/tree/master/0572-subtree-of-another-tree) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/manikittu810/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0775-n-ary-tree-preorder-traversal](https://github.com/manikittu810/Leetcode/tree/master/0775-n-ary-tree-preorder-traversal) |
 | [0783-search-in-a-binary-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0783-search-in-a-binary-search-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/manikittu810/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/manikittu810/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
@@ -302,6 +303,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0563-binary-tree-tilt](https://github.com/manikittu810/Leetcode/tree/master/0563-binary-tree-tilt) |
 | [0572-subtree-of-another-tree](https://github.com/manikittu810/Leetcode/tree/master/0572-subtree-of-another-tree) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/manikittu810/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
+| [0775-n-ary-tree-preorder-traversal](https://github.com/manikittu810/Leetcode/tree/master/0775-n-ary-tree-preorder-traversal) |
 | [0799-minimum-distance-between-bst-nodes](https://github.com/manikittu810/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0933-increasing-order-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0933-increasing-order-search-tree) |
 | [0975-range-sum-of-bst](https://github.com/manikittu810/Leetcode/tree/master/0975-range-sum-of-bst) |
@@ -361,6 +363,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0775-n-ary-tree-preorder-traversal](https://github.com/manikittu810/Leetcode/tree/master/0775-n-ary-tree-preorder-traversal) |
 | [0933-increasing-order-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0933-increasing-order-search-tree) |
 ## Design
 |  |
