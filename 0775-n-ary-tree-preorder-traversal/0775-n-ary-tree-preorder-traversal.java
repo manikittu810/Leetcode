@@ -18,18 +18,19 @@ class Node {
 */
 
 class Solution {
+    private List<Integer> ans ;
     public List<Integer> preorder(Node root) {
-        List<Integer> ans = new ArrayList<>();
+       ans = new ArrayList<>();
         if(root == null){
             return ans;
         }
-        helper(root,ans);
+        helper(root);
         return ans;
     }
-    private void helper(Node root,List<Integer> ans){
+    private void helper(Node root){
         ans.add(root.val);
-        for(int i=0;i<root.children.size();i++){
-            helper(root.children.get(i),ans);
+        for(Node i : root.children){
+            helper(i);
         }
     }
 }
