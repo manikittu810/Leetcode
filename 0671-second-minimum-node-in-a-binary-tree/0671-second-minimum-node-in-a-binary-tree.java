@@ -15,39 +15,26 @@
  */
 class Solution {
     public int findSecondMinimumValue(TreeNode root) {
-        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
-        if(root == null){
-            return -1;
-        } 
-
-        int n1=0,n2 =0;
-
-        helper(root,minHeap);
-
-        if(minHeap.size()>=2){
-            n1 = minHeap.poll();
-             n2 = minHeap.poll();
-        }
-        
-        else{
-             return -1;
-        }
-        return n2;
+       Set<Integer> s = new HashSet<>();
+       helper(root,s);
+       int []a = new int[s.size()];
+       int idx = 0;
+       for(int n  : s){
+        a[idx++] = n;
+       }
+       Arrays.sort(a);
+       if(a.length==1){
+        return -1;
+       }
+        return a[1];
     }
-
-
-    public void helper(TreeNode root,
-    PriorityQueue<Integer> minHeap){
-        
+    private void helper(TreeNode root, Set<Integer> s){
         if(root == null){
-            return;
+            return ;
         }
+        s.add(root.val);
 
-        if(!minHeap.contains(root.val)){
-            minHeap.offer(root.val);
-        }
-
-         helper(root.left,minHeap);
-         helper(root.right,minHeap);
+        helper(root.left,s);
+        helper(root.right,s);
     }
 }
