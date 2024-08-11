@@ -15,40 +15,28 @@
  */
 class Solution {
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {
-         if(root1 == null && root2 == null){
-            return true;
-        }
-
-        if(root1 == null || root2 == null){
-            return false;
-        }
-       
-        List<Integer> l1 = new ArrayList<>();
-        List<Integer> l2 = new ArrayList<>();
-
-        helper(root1,l1);//n
-        helper(root2,l2);//n
-
-        if(l1.size()!=l2.size()){
-            return false;
-        }
-            for(int i=0;i<l1.size();i++){
-                if(!l1.get(i).equals(l2.get(i))){
-                    return false;
-                }
-            }
-            return true;
+        return helper(root1).equals(helper(root2));
     }
-    private void helper(TreeNode root,List<Integer> l){
+    private List<Integer> helper(TreeNode root){
+        List<Integer> l = new ArrayList<>();
+
         if(root == null){
-            return ;
+            return null;
         }
-        if(root.left == null && root.right == null){
-            l.add(root.val);
-            return;
+        Stack<TreeNode> s= new Stack<>();
+        s.push(root);
+        while(!s.isEmpty()){
+            TreeNode cur = s.pop();
+            if(cur.left==null && cur.right ==null){
+                l.add(cur.val);
+            }
+            if(cur.left!=null){
+                s.push(cur.left);
+            }
+            if(cur.right != null){
+                s.push(cur.right);
+            }
         }
-        helper(root.left,l);
-        helper(root.right,l);
-    }
+        return l;
+    }    
 }
-
