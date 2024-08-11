@@ -15,28 +15,29 @@
  */
 class Solution {
     public boolean leafSimilar(TreeNode root1, TreeNode root2) {
+         if(root1 == null && root2 == null){
+            return true;
+        }
+
         if(root1 == null || root2 == null){
             return false;
         }
-        if(root1 == null && root2 == null){
-            return true;
-        }
+       
         List<Integer> l1 = new ArrayList<>();
         List<Integer> l2 = new ArrayList<>();
+
         helper(root1,l1);//n
         helper(root2,l2);//n
+
         if(l1.size()!=l2.size()){
             return false;
         }
-        else{//n
             for(int i=0;i<l1.size();i++){
                 if(!l1.get(i).equals(l2.get(i))){
                     return false;
                 }
             }
             return true;
-        }
-
     }
     private void helper(TreeNode root,List<Integer> l){
         if(root == null){
