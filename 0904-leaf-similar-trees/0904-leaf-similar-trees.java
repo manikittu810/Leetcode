@@ -30,11 +30,11 @@ class Solution {
             if(cur.left==null && cur.right ==null){
                 l.add(cur.val);
             }
-            if(cur.left!=null){
-                s.push(cur.left);
-            }
-            if(cur.right != null){
+            if(cur.right!=null){
                 s.push(cur.right);
+            }
+            if(cur.left != null){
+                s.push(cur.left);
             }
         }
         return l;
