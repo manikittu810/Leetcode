@@ -292,6 +292,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0975-range-sum-of-bst](https://github.com/manikittu810/Leetcode/tree/master/0975-range-sum-of-bst) |
 | [1005-univalued-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/1005-univalued-binary-tree) |
 | [1035-cousins-in-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/1035-cousins-in-binary-tree) |
+| [1079-sum-of-root-to-leaf-binary-numbers](https://github.com/manikittu810/Leetcode/tree/master/1079-sum-of-root-to-leaf-binary-numbers) |
 | [2384-root-equals-sum-of-children](https://github.com/manikittu810/Leetcode/tree/master/2384-root-equals-sum-of-children) |
 ## Depth-First Search
 |  |
@@ -320,6 +321,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0975-range-sum-of-bst](https://github.com/manikittu810/Leetcode/tree/master/0975-range-sum-of-bst) |
 | [1005-univalued-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/1005-univalued-binary-tree) |
 | [1035-cousins-in-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/1035-cousins-in-binary-tree) |
+| [1079-sum-of-root-to-leaf-binary-numbers](https://github.com/manikittu810/Leetcode/tree/master/1079-sum-of-root-to-leaf-binary-numbers) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -364,6 +366,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0975-range-sum-of-bst](https://github.com/manikittu810/Leetcode/tree/master/0975-range-sum-of-bst) |
 | [1005-univalued-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/1005-univalued-binary-tree) |
 | [1035-cousins-in-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/1035-cousins-in-binary-tree) |
+| [1079-sum-of-root-to-leaf-binary-numbers](https://github.com/manikittu810/Leetcode/tree/master/1079-sum-of-root-to-leaf-binary-numbers) |
 | [2384-root-equals-sum-of-children](https://github.com/manikittu810/Leetcode/tree/master/2384-root-equals-sum-of-children) |
 ## Binary Search Tree
 |  |
