@@ -10,29 +10,30 @@
 
 class Solution {
     public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {
+        //DFS Iterative Inorder traversal Implementation
         Deque<TreeNode> r1 = new ArrayDeque<>();
         Deque<TreeNode> r2 = new ArrayDeque<>();
+        TreeNode o  = original,c =cloned;
 
-        r1.offer(original);
-        r2.offer(cloned);
-
-        while(!r1.isEmpty()){
-            TreeNode o = r1.poll();
-            TreeNode c = r2.poll();
+        r1.add(o);
+        r2.add(c);   
+        while(o!=null || !r1.isEmpty()){
+            while(o!=null){
+                r1.add(o);
+                r2.add(c);
+                o=o.left;
+                c=c.left;
+            }
+            o =r1.removeLast();
+            c = r2.removeLast();
 
             if(o == target){
                 return c;
             }
 
-            if(o.left!=null){
-                r1.offer(o.left);
-                r2.offer(c.left);
-            }
-            if(o.right!=null){
-                r1.offer(o.right);
-                r2.offer(c.right);
-            }
-        }
+            o = o.right;
+            c = c.right;
+        }     
         return null;
     }
 }
