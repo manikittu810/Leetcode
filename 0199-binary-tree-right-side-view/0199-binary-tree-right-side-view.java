@@ -25,43 +25,26 @@ class Solution {
         Queue <TreeNode> q = new LinkedList<>();
 
         q.offer(root);
-        q.offer(null);
-
-        TreeNode lastNode = null;
-
         while(!q.isEmpty()){
-
+            int n= q.size();
+            for(int i=0;i<n;i++){
                 TreeNode cur = q.poll();
+                if(i==0){
+                    l.add(cur.val);
+                }
+                if(cur.right != null){
 
-                if(cur!= null){
-
-                    lastNode = cur;
+                    q.offer(cur.right);
                     
+                    }    
                 if(cur.left!=null){
 
                     q.offer(cur.left);
 
                     }
-
-                    if(cur.right != null){
-
-                    q.offer(cur.right);
-                    
-                    }
-
-                }
-
-                else{
-
-                    l.add(lastNode.val);
-
-                    if(!q.isEmpty()){
-
-                        q.offer(null);
-                }
-                
             }
-        }
+            }
         return l;
+
+        }
     }
-}
