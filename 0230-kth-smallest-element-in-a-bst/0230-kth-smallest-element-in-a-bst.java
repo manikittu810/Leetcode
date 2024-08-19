@@ -14,19 +14,22 @@
  * }
  */
 class Solution {
-    private int ans,x;
+    private int ans,count;
     public int kthSmallest(TreeNode root, int k) {
-        x=k;
-         dfs(root);
-         return ans;
+        ans=0;
+        count=k;
+        dfs(root);
+        return ans;
     }
     private void dfs(TreeNode root){
         if(root == null){
             return ;
         }
         dfs(root.left);
-        x--;
-        if(x==0){ans = root.val;}
+        count--;
+        if(count == 0){
+            ans = root.val;
+        }
         dfs(root.right);
     }
 }
