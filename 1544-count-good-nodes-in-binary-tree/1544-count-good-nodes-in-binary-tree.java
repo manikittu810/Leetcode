@@ -14,21 +14,19 @@
  * }
  */
 class Solution {
-    private int c ;
+    private int count;
     public int goodNodes(TreeNode root) {
-        if(root == null){
-            return 0;
-        }
-        c = 0;
-        helper(root,Integer.MIN_VALUE);
-        return c;
+    count =0;
+    int maxVal = Integer.MIN_VALUE;
+    helper(root,maxVal);
+        return count;
     }
-    private void helper(TreeNode root, int maxVal){
-        if(root == null){
+    private void helper(TreeNode root,int maxVal){
+        if(root ==null){
             return ;
         }
-        if(root.val>= maxVal){
-            c++;
+        if(root.val >=maxVal){
+            count+=1;
             maxVal = root.val;
         }
         helper(root.left,maxVal);
