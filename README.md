@@ -207,6 +207,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0013-roman-to-integer](https://github.com/manikittu810/Leetcode/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/manikittu810/Leetcode/tree/master/0014-longest-common-prefix) |
+| [0022-generate-parentheses](https://github.com/manikittu810/Leetcode/tree/master/0022-generate-parentheses) |
 | [0257-binary-tree-paths](https://github.com/manikittu810/Leetcode/tree/master/0257-binary-tree-paths) |
 ## Trie
 |  |
@@ -435,6 +436,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Backtracking
 |  |
 | ------- |
+| [0022-generate-parentheses](https://github.com/manikittu810/Leetcode/tree/master/0022-generate-parentheses) |
 | [0257-binary-tree-paths](https://github.com/manikittu810/Leetcode/tree/master/0257-binary-tree-paths) |
 ## String Matching
 |  |
@@ -444,4 +446,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0572-subtree-of-another-tree](https://github.com/manikittu810/Leetcode/tree/master/0572-subtree-of-another-tree) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0022-generate-parentheses](https://github.com/manikittu810/Leetcode/tree/master/0022-generate-parentheses) |
 <!---LeetCode Topics End-->
