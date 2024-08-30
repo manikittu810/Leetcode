@@ -22,17 +22,17 @@ class Solution {
         if(startIdx>endIdx){return null;}
         TreeNode root = new TreeNode(a[preOrderIndex++]);
 
-        int inorderIndexOfRoot = startIdx;
+        int mid = startIdx;
 
         for(int i=startIdx;i<=endIdx;i++){
             if(b[i] == root.val){
-                inorderIndexOfRoot = i;
+                mid = i;
                 break;
             }
         }
 
-        root.left = preOrder(a,b,startIdx,inorderIndexOfRoot-1);
-        root.right = preOrder(a,b,inorderIndexOfRoot+1,endIdx);
+        root.left = preOrder(a,b,startIdx,mid-1);
+        root.right = preOrder(a,b,mid+1,endIdx);
         return root;
     }
 
