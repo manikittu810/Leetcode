@@ -226,6 +226,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0940-fruit-into-baskets](https://github.com/manikittu810/Leetcode/tree/master/0940-fruit-into-baskets) |
 | [0983-validate-stack-sequences](https://github.com/manikittu810/Leetcode/tree/master/0983-validate-stack-sequences) |
 | [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/manikittu810/Leetcode/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
+| [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/manikittu810/Leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 ## Hash Table
 |  |
 | ------- |
@@ -234,6 +235,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/manikittu810/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/manikittu810/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0940-fruit-into-baskets](https://github.com/manikittu810/Leetcode/tree/master/0940-fruit-into-baskets) |
+| [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/manikittu810/Leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -257,6 +259,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/manikittu810/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/manikittu810/Leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 ## Quickselect
 |  |
 | ------- |
