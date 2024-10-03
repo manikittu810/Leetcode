@@ -7,8 +7,8 @@ class Solution {
 
         int count =0;
         Map<Integer,Integer> map = new HashMap<>();
-        map.put(0,1);
-        for(int i=1;i<prefixSum.length;i++){
+        // map.put(0,1);
+        for(int i=0;i<prefixSum.length;i++){
             int remainder = prefixSum[i]%k;
             if(remainder <0){
                 remainder+=k;
