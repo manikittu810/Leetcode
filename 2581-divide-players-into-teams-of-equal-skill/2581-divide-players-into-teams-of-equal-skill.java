@@ -4,7 +4,7 @@ class Solution {
         if(a.length%2!=0){
             return -1;
         }
-        Arrays.sort(a);//log n
+        Arrays.sort(a);//n log n
 
         int l=0,r=a.length-1;
         long sum=0, chem=0;
