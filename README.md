@@ -212,6 +212,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0567-permutation-in-string](https://github.com/manikittu810/Leetcode/tree/master/0567-permutation-in-string) |
 | [2470-removing-stars-from-a-string](https://github.com/manikittu810/Leetcode/tree/master/2470-removing-stars-from-a-string) |
+| [2800-minimum-string-length-after-removing-substrings](https://github.com/manikittu810/Leetcode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Trie
 |  |
 | ------- |
@@ -464,6 +465,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0933-increasing-order-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0933-increasing-order-search-tree) |
 | [0983-validate-stack-sequences](https://github.com/manikittu810/Leetcode/tree/master/0983-validate-stack-sequences) |
 | [2470-removing-stars-from-a-string](https://github.com/manikittu810/Leetcode/tree/master/2470-removing-stars-from-a-string) |
+| [2800-minimum-string-length-after-removing-substrings](https://github.com/manikittu810/Leetcode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Design
 |  |
 | ------- |
@@ -501,6 +503,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0735-asteroid-collision](https://github.com/manikittu810/Leetcode/tree/master/0735-asteroid-collision) |
 | [0983-validate-stack-sequences](https://github.com/manikittu810/Leetcode/tree/master/0983-validate-stack-sequences) |
 | [2470-removing-stars-from-a-string](https://github.com/manikittu810/Leetcode/tree/master/2470-removing-stars-from-a-string) |
+| [2800-minimum-string-length-after-removing-substrings](https://github.com/manikittu810/Leetcode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Concurrency
 |  |
 | ------- |
