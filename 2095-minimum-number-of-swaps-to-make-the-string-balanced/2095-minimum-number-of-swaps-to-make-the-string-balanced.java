@@ -1,16 +1,19 @@
 class Solution {
     public int minSwaps(String s) {
-    int n = 0;
-    for(int i =0;i<s.length();i++){
-        if(s.charAt(i) == '['){
-            n++;
-        }
-        else{
-            if(n>0){
-            n--;
+    int balance=0;
+    int swaps = 0;
+        for(Character c : s.toCharArray()){
+            if(c == '['){
+                balance++;
+            }else{
+                balance--;
+            }
+            
+            if(balance < 0){
+                swaps++;
+                balance = 0;
             }
         }
-    }
-    return (n+1)/2;
+        return swaps/2 + swaps%2;
     }
 }
