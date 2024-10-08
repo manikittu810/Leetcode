@@ -1,30 +1,32 @@
 class Solution {
     public boolean checkInclusion(String s1, String s2) {
-        if(s1.length() > s2.length()){return false;}
+        if(s1.length()>s2.length()){
+            return false;
+        }
 
-        Map<Character,Integer> map1 = new HashMap<>();
-        Map<Character,Integer> map2 = new HashMap<>();
+        int[] countArr1 = new int[26];
+        int[] countArr2 = new int[26];
 
         for(int i=0;i<s1.length();i++){
-            map1.put(s1.charAt(i),map1.getOrDefault(s1.charAt(i),0)+1);
-            map2.put(s2.charAt(i),map2.getOrDefault(s2.charAt(i),0)+1);
+            countArr1[s1.charAt(i)-'a']++;
+            countArr2[s2.charAt(i)-'a']++;
         }
 
-        for(int i=s1.length();i<s2.length();i++){
-            if(map1.equals(map2)){return true;}
+        for(int i=0;i<s2.length()-s1.length();i++){
+            if(matchFound(countArr1,countArr2)){return true;}
 
+            countArr2[s2.charAt(i+s1.length())-'a']++;
+            countArr2[s2.charAt(i)-'a']--;
+        }
+        return matchFound(countArr1,countArr2);
+    }
 
-
-            char outGoingCharacter = s2.charAt(i-s1.length());
-            map2.put(outGoingCharacter,map2.get(outGoingCharacter)-1);
-            // map2.entrySet().removeIf(entry -> entry.getValue()==0);
-            if(map2.get(outGoingCharacter) == 0){
-                map2.remove(outGoingCharacter);
+    private boolean matchFound(int[] s1,int[] s2){
+        for(int i=0;i<26;i++){
+            if(s1[i]!=s2[i]){
+                return false;
             }
-
-            char incomingCharacater = s2.charAt(i);
-            map2.put(incomingCharacater,map2.getOrDefault(incomingCharacater,0)+1);
         }
-        return map1.equals(map2);
+        return true;
     }
 }
