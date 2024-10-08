@@ -17,10 +17,10 @@ class Solution {
 
             char outGoingCharacter = s2.charAt(i-s1.length());
             map2.put(outGoingCharacter,map2.get(outGoingCharacter)-1);
-            map2.entrySet().removeIf(entry -> entry.getValue()==0);
-            // if(map2.get(outGoingCharacter) == 0){
-            //     map2.remove(outGoingCharacter);
-            // }
+            // map2.entrySet().removeIf(entry -> entry.getValue()==0);
+            if(map2.get(outGoingCharacter) == 0){
+                map2.remove(outGoingCharacter);
+            }
 
             char incomingCharacater = s2.charAt(i);
             map2.put(incomingCharacater,map2.getOrDefault(incomingCharacater,0)+1);
