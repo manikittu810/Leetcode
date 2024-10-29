@@ -237,6 +237,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1127-last-stone-weight](https://github.com/manikittu810/Leetcode/tree/master/1127-last-stone-weight) |
 | [1256-rank-transform-of-an-array](https://github.com/manikittu810/Leetcode/tree/master/1256-rank-transform-of-an-array) |
 | [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/manikittu810/Leetcode/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
+| [1463-the-k-weakest-rows-in-a-matrix](https://github.com/manikittu810/Leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/manikittu810/Leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1694-make-sum-divisible-by-p](https://github.com/manikittu810/Leetcode/tree/master/1694-make-sum-divisible-by-p) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/manikittu810/Leetcode/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
@@ -271,6 +272,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/manikittu810/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0506-relative-ranks](https://github.com/manikittu810/Leetcode/tree/master/0506-relative-ranks) |
 | [1256-rank-transform-of-an-array](https://github.com/manikittu810/Leetcode/tree/master/1256-rank-transform-of-an-array) |
+| [1463-the-k-weakest-rows-in-a-matrix](https://github.com/manikittu810/Leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manikittu810/Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/manikittu810/Leetcode/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 ## Heap (Priority Queue)
@@ -280,6 +282,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0506-relative-ranks](https://github.com/manikittu810/Leetcode/tree/master/0506-relative-ranks) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/manikittu810/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1127-last-stone-weight](https://github.com/manikittu810/Leetcode/tree/master/1127-last-stone-weight) |
+| [1463-the-k-weakest-rows-in-a-matrix](https://github.com/manikittu810/Leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/manikittu810/Leetcode/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manikittu810/Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 ## Bucket Sort
@@ -464,6 +467,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0799-minimum-distance-between-bst-nodes](https://github.com/manikittu810/Leetcode/tree/master/0799-minimum-distance-between-bst-nodes) |
 | [0933-increasing-order-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0933-increasing-order-search-tree) |
 | [0975-range-sum-of-bst](https://github.com/manikittu810/Leetcode/tree/master/0975-range-sum-of-bst) |
+| [1463-the-k-weakest-rows-in-a-matrix](https://github.com/manikittu810/Leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 ## Two Pointers
 |  |
 | ------- |
@@ -544,4 +548,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1002-maximum-width-ramp](https://github.com/manikittu810/Leetcode/tree/master/1002-maximum-width-ramp) |
+## Matrix
+|  |
+| ------- |
+| [1463-the-k-weakest-rows-in-a-matrix](https://github.com/manikittu810/Leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 <!---LeetCode Topics End-->
