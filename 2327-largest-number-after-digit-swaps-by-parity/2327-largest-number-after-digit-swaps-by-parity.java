@@ -21,14 +21,15 @@ class Solution {
      while(n1>0){
         int s = n1%10;
         if(s%2==0){
-            sb.insert(0,e.poll());
+            sb.append(e.poll());
         }
         else{
-            sb.insert(0,o.poll());
+            sb.append(o.poll());
         }
         n1/=10;
      }
-    //  sb.reverse();
+     sb.reverse();
      return Integer.parseInt(sb.toString());
+
     }
 }
