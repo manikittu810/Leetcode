@@ -227,6 +227,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/manikittu810/Leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0347-top-k-frequent-elements](https://github.com/manikittu810/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0506-relative-ranks](https://github.com/manikittu810/Leetcode/tree/master/0506-relative-ranks) |
 | [0560-subarray-sum-equals-k](https://github.com/manikittu810/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0735-asteroid-collision](https://github.com/manikittu810/Leetcode/tree/master/0735-asteroid-collision) |
 | [0940-fruit-into-baskets](https://github.com/manikittu810/Leetcode/tree/master/0940-fruit-into-baskets) |
@@ -267,6 +268,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/manikittu810/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0506-relative-ranks](https://github.com/manikittu810/Leetcode/tree/master/0506-relative-ranks) |
 | [1256-rank-transform-of-an-array](https://github.com/manikittu810/Leetcode/tree/master/1256-rank-transform-of-an-array) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manikittu810/Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/manikittu810/Leetcode/tree/master/2581-divide-players-into-teams-of-equal-skill) |
@@ -274,6 +276,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/manikittu810/Leetcode/tree/master/0347-top-k-frequent-elements) |
+| [0506-relative-ranks](https://github.com/manikittu810/Leetcode/tree/master/0506-relative-ranks) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/manikittu810/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/manikittu810/Leetcode/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manikittu810/Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
