@@ -247,6 +247,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/manikittu810/Leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manikittu810/Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/manikittu810/Leetcode/tree/master/2581-divide-players-into-teams-of-equal-skill) |
+| [2585-delete-greatest-value-in-each-row](https://github.com/manikittu810/Leetcode/tree/master/2585-delete-greatest-value-in-each-row) |
 ## Hash Table
 |  |
 | ------- |
@@ -286,6 +287,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/manikittu810/Leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manikittu810/Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/manikittu810/Leetcode/tree/master/2581-divide-players-into-teams-of-equal-skill) |
+| [2585-delete-greatest-value-in-each-row](https://github.com/manikittu810/Leetcode/tree/master/2585-delete-greatest-value-in-each-row) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -301,6 +303,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2412-minimum-amount-of-time-to-fill-cups](https://github.com/manikittu810/Leetcode/tree/master/2412-minimum-amount-of-time-to-fill-cups) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/manikittu810/Leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manikittu810/Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
+| [2585-delete-greatest-value-in-each-row](https://github.com/manikittu810/Leetcode/tree/master/2585-delete-greatest-value-in-each-row) |
 ## Bucket Sort
 |  |
 | ------- |
@@ -543,6 +546,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0983-validate-stack-sequences](https://github.com/manikittu810/Leetcode/tree/master/0983-validate-stack-sequences) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/manikittu810/Leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2470-removing-stars-from-a-string](https://github.com/manikittu810/Leetcode/tree/master/2470-removing-stars-from-a-string) |
+| [2585-delete-greatest-value-in-each-row](https://github.com/manikittu810/Leetcode/tree/master/2585-delete-greatest-value-in-each-row) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/manikittu810/Leetcode/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Concurrency
 |  |
@@ -571,4 +575,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/manikittu810/Leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
+| [2585-delete-greatest-value-in-each-row](https://github.com/manikittu810/Leetcode/tree/master/2585-delete-greatest-value-in-each-row) |
 <!---LeetCode Topics End-->
