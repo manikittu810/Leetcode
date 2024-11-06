@@ -1,44 +1,56 @@
 class Solution {
     public boolean isValidSudoku(char[][] board) {
-        //imagine creating HashSet(s) for every row,col and for each 3*3 box in the sudoku
-        Set<Character>[] row = new HashSet[9];
-        Set<Character>[] col = new HashSet[9];
-        Set<Character>[] boxes = new HashSet[9];
-
-
-        //Assigning new HashSet for each row,col, 3*3 boxes
-        for(int i=0;i<9;i++){
-            row[i] = new HashSet<>();
-            col[i] = new HashSet<>();
-            boxes[i] = new HashSet<>();
-        }
-        //traverse through each cell in the sudoku
-
-        for(int i=0;i<9;i++){
-            for(int j=0;j<9;j++){
-                char num = board[i][j];
-
-                if(num == '.'){
+        for(int r=0;r<9;r++){
+            Set<Character> rSet = new HashSet<>();
+            for(int c=0;c<9;c++){
+                if(board[r][c]=='.'){
                     continue;
                 }
-                if(row[i].contains(num)){
-                    return false;
-                }
-                row[i].add(num);
 
-                if(col[j].contains(num)){
+                if(rSet.contains(board[r][c])){
                     return false;
                 }
-                col[j].add(num);
 
-                int boxIndex = (i/3)*3 + (j/3);
-                if(boxes[boxIndex].contains(num)){
-                    return false;
+                rSet.add(board[r][c]);
+            }
+        }
+
+        for(int c=0;c<9;c++){
+        Set<Character> cSet = new HashSet<>();
+        for(int r =0;r<9;r++){
+            if(board[r][c] == '.'){
+                continue;
+            }
+
+            if(cSet.contains(board[r][c])){
+                return false;
+            }
+            cSet.add(board[r][c]);
+        }
+
+        }
+
+        for(int smallGrid = 0;smallGrid < 9 ; smallGrid++){
+            Set<Character> gridSet = new HashSet<>();
+            int i = (smallGrid/3)*3;
+            int j = (smallGrid%3)*3;
+            for(int r =0;r<3;r++){
+                for(int c=0;c<3;c++){
+                    int row = i+r;
+                    int col = j+c;
+
+                    if(board[row][col] == '.'){
+                        continue;
+                    }
+
+                    if(gridSet.contains(board[row][col])){
+                        return false;
+                    }
+
+                    gridSet.add(board[row][col]);
                 }
-                boxes[boxIndex].add(num);
             }
         }
         return true;
     }
 }
-
