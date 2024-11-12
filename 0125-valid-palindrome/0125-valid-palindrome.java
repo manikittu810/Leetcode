@@ -5,11 +5,12 @@ class Solution {
         while(i<=j){
             if(s1.charAt(i)!=s1.charAt(j)){
                 return false;
-            }else{
-            i++;
-            j--;
+            }
+            else{
+                i++;
+                j--;
             }
         }
-return true;
+        return true;
     }
 }
