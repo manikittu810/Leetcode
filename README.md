@@ -208,6 +208,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/manikittu810/Leetcode/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/manikittu810/Leetcode/tree/master/0014-longest-common-prefix) |
 | [0022-generate-parentheses](https://github.com/manikittu810/Leetcode/tree/master/0022-generate-parentheses) |
+| [0125-valid-palindrome](https://github.com/manikittu810/Leetcode/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/manikittu810/Leetcode/tree/master/0242-valid-anagram) |
 | [0257-binary-tree-paths](https://github.com/manikittu810/Leetcode/tree/master/0257-binary-tree-paths) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
@@ -506,6 +507,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0125-valid-palindrome](https://github.com/manikittu810/Leetcode/tree/master/0125-valid-palindrome) |
 | [0567-permutation-in-string](https://github.com/manikittu810/Leetcode/tree/master/0567-permutation-in-string) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/manikittu810/Leetcode/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/manikittu810/Leetcode/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
