@@ -225,6 +225,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/manikittu810/Leetcode/tree/master/0001-two-sum) |
+| [0015-3sum](https://github.com/manikittu810/Leetcode/tree/master/0015-3sum) |
 | [0036-valid-sudoku](https://github.com/manikittu810/Leetcode/tree/master/0036-valid-sudoku) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/manikittu810/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
@@ -288,6 +289,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0015-3sum](https://github.com/manikittu810/Leetcode/tree/master/0015-3sum) |
 | [0242-valid-anagram](https://github.com/manikittu810/Leetcode/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/manikittu810/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0506-relative-ranks](https://github.com/manikittu810/Leetcode/tree/master/0506-relative-ranks) |
@@ -509,6 +511,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0015-3sum](https://github.com/manikittu810/Leetcode/tree/master/0015-3sum) |
 | [0125-valid-palindrome](https://github.com/manikittu810/Leetcode/tree/master/0125-valid-palindrome) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/manikittu810/Leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0567-permutation-in-string](https://github.com/manikittu810/Leetcode/tree/master/0567-permutation-in-string) |
