@@ -1,19 +1,18 @@
 class Solution {
     public int[] twoSum(int[] a, int t) {
         int l=0,r=a.length-1;
+
         while(l<r){
-            int sum = a[l]+a[r];
-            if(sum==t){
+            if(a[l]+a[r]==t){
                 return new int[]{l+1,r+1};
             }
-            else if(sum<t){
-                sum-=a[l];
+            else if(a[l]+a[r] < t){
                 l++;
-            }else{
-                sum-=a[r];
+            }
+            else{
                 r--;
             }
         }
-        return new int[]{-1,-1}
-;    }
+        return new int[]{-1,-1};
+    }
 }
