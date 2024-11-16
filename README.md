@@ -228,6 +228,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0011-container-with-most-water](https://github.com/manikittu810/Leetcode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/manikittu810/Leetcode/tree/master/0015-3sum) |
 | [0036-valid-sudoku](https://github.com/manikittu810/Leetcode/tree/master/0036-valid-sudoku) |
+| [0042-trapping-rain-water](https://github.com/manikittu810/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/manikittu810/Leetcode/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/manikittu810/Leetcode/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0128-longest-consecutive-sequence](https://github.com/manikittu810/Leetcode/tree/master/0128-longest-consecutive-sequence) |
@@ -514,6 +515,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0011-container-with-most-water](https://github.com/manikittu810/Leetcode/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/manikittu810/Leetcode/tree/master/0015-3sum) |
+| [0042-trapping-rain-water](https://github.com/manikittu810/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0125-valid-palindrome](https://github.com/manikittu810/Leetcode/tree/master/0125-valid-palindrome) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/manikittu810/Leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0567-permutation-in-string](https://github.com/manikittu810/Leetcode/tree/master/0567-permutation-in-string) |
@@ -524,6 +526,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/manikittu810/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0735-asteroid-collision](https://github.com/manikittu810/Leetcode/tree/master/0735-asteroid-collision) |
 | [0775-n-ary-tree-preorder-traversal](https://github.com/manikittu810/Leetcode/tree/master/0775-n-ary-tree-preorder-traversal) |
 | [0776-n-ary-tree-postorder-traversal](https://github.com/manikittu810/Leetcode/tree/master/0776-n-ary-tree-postorder-traversal) |
@@ -564,6 +567,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0022-generate-parentheses](https://github.com/manikittu810/Leetcode/tree/master/0022-generate-parentheses) |
+| [0042-trapping-rain-water](https://github.com/manikittu810/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/manikittu810/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
 ## Simulation
 |  |
@@ -601,6 +605,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Monotonic Stack
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/manikittu810/Leetcode/tree/master/0042-trapping-rain-water) |
 | [1002-maximum-width-ramp](https://github.com/manikittu810/Leetcode/tree/master/1002-maximum-width-ramp) |
 ## Matrix
 |  |
