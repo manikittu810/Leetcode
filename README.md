@@ -342,6 +342,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0013-roman-to-integer](https://github.com/manikittu810/Leetcode/tree/master/0013-roman-to-integer) |
+| [0795-k-th-symbol-in-grammar](https://github.com/manikittu810/Leetcode/tree/master/0795-k-th-symbol-in-grammar) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/manikittu810/Leetcode/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 ## Sliding Window
 |  |
@@ -550,6 +551,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0222-count-complete-tree-nodes](https://github.com/manikittu810/Leetcode/tree/master/0222-count-complete-tree-nodes) |
+| [0795-k-th-symbol-in-grammar](https://github.com/manikittu810/Leetcode/tree/master/0795-k-th-symbol-in-grammar) |
 ## Backtracking
 |  |
 | ------- |
@@ -617,4 +619,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/manikittu810/Leetcode/tree/master/0128-longest-consecutive-sequence) |
+## Recursion
+|  |
+| ------- |
+| [0795-k-th-symbol-in-grammar](https://github.com/manikittu810/Leetcode/tree/master/0795-k-th-symbol-in-grammar) |
 <!---LeetCode Topics End-->
