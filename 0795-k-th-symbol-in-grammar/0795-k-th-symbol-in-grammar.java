@@ -10,7 +10,7 @@ class Solution {
         else{
             return 1-kthGrammar(n-1,k-mid);
             // return kthGrammar(n-1,k-mid)^1;
-
+//observability skills for this problem is a must. 70%-> Observability and 30% recursion ....reference aditya verma
         }
     }
 }
