@@ -9,11 +9,14 @@ class Solution {
         private void backTrack(
             int startIndex,List<List<Integer>> res,List<Integer> ans,int[] a
         ){
-        res.add(new ArrayList<>(ans));
-        for(int i=startIndex;i<a.length;i++){
-            ans.add(a[i]);
-            backTrack(i+1,res,ans,a);
+            if(startIndex>=a.length){
+            res.add(new ArrayList<>(ans));
+            return;
+            }
+            ans.add(a[startIndex]);
+            backTrack(startIndex+1,res,ans,a);
             ans.remove(ans.size()-1);
-        }
+            backTrack(startIndex+1,res,ans,a);
+
         }
 }
