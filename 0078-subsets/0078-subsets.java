@@ -13,7 +13,7 @@ class Solution {
         for(int i=startIndex;i<a.length;i++){
             ans.add(a[i]);
             backTrack(i+1,res,ans,a);
-            ans.remove(ans.removeLast());
+            ans.remove(ans.size()-1);
         }
         }
 }
