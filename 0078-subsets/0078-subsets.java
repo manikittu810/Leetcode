@@ -18,6 +18,5 @@ class Solution {
             ans.remove(ans.size()-1);
             backTrack(startIndex+1,res,ans,a);
             return;
-
         }
 }
