@@ -1,6 +1,3 @@
-import java.util.LinkedList;
-import java.util.Queue;
-
 class Solution {
     public int nearestExit(char[][] grid, int[] e) {
         int row = grid.length;
