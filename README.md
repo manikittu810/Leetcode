@@ -237,6 +237,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0128-longest-consecutive-sequence](https://github.com/manikittu810/Leetcode/tree/master/0128-longest-consecutive-sequence) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/manikittu810/Leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/manikittu810/Leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0200-number-of-islands](https://github.com/manikittu810/Leetcode/tree/master/0200-number-of-islands) |
 | [0238-product-of-array-except-self](https://github.com/manikittu810/Leetcode/tree/master/0238-product-of-array-except-self) |
 | [0347-top-k-frequent-elements](https://github.com/manikittu810/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0506-relative-ranks](https://github.com/manikittu810/Leetcode/tree/master/0506-relative-ranks) |
@@ -411,6 +412,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0112-path-sum](https://github.com/manikittu810/Leetcode/tree/master/0112-path-sum) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/manikittu810/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0199-binary-tree-right-side-view](https://github.com/manikittu810/Leetcode/tree/master/0199-binary-tree-right-side-view) |
+| [0200-number-of-islands](https://github.com/manikittu810/Leetcode/tree/master/0200-number-of-islands) |
 | [0207-course-schedule](https://github.com/manikittu810/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/manikittu810/Leetcode/tree/master/0210-course-schedule-ii) |
 | [0226-invert-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/0226-invert-binary-tree) |
@@ -451,6 +453,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0111-minimum-depth-of-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/0111-minimum-depth-of-binary-tree) |
 | [0112-path-sum](https://github.com/manikittu810/Leetcode/tree/master/0112-path-sum) |
 | [0199-binary-tree-right-side-view](https://github.com/manikittu810/Leetcode/tree/master/0199-binary-tree-right-side-view) |
+| [0200-number-of-islands](https://github.com/manikittu810/Leetcode/tree/master/0200-number-of-islands) |
 | [0207-course-schedule](https://github.com/manikittu810/Leetcode/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/manikittu810/Leetcode/tree/master/0210-course-schedule-ii) |
 | [0226-invert-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/0226-invert-binary-tree) |
@@ -636,6 +639,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0036-valid-sudoku](https://github.com/manikittu810/Leetcode/tree/master/0036-valid-sudoku) |
+| [0200-number-of-islands](https://github.com/manikittu810/Leetcode/tree/master/0200-number-of-islands) |
 | [1036-rotting-oranges](https://github.com/manikittu810/Leetcode/tree/master/1036-rotting-oranges) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/manikittu810/Leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/manikittu810/Leetcode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
@@ -644,6 +648,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/manikittu810/Leetcode/tree/master/0128-longest-consecutive-sequence) |
+| [0200-number-of-islands](https://github.com/manikittu810/Leetcode/tree/master/0200-number-of-islands) |
 | [0547-number-of-provinces](https://github.com/manikittu810/Leetcode/tree/master/0547-number-of-provinces) |
 ## Recursion
 |  |
