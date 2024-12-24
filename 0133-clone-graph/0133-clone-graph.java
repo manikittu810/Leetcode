@@ -23,28 +23,22 @@ class Solution {
         if(node == null){
             return null;
         }
-
-        Queue<Node> q = new LinkedList<>();
         Map<Node,Node> visited = new HashMap<>();
-
+        Queue<Node> q = new LinkedList<>();
+        Node clonedStart = new Node(node.val,new ArrayList<>());
+        visited.put(node,clonedStart);
         q.offer(node);
-
-        Node clonedNode = new Node(node.val,new ArrayList<>());
-        visited.put(node,clonedNode);
-    
         while(!q.isEmpty()){
-
-            Node currentNode = q.poll();
-
-            for(Node u : currentNode.neighbors){
+            Node currentNodeToBeExplored = q.poll();
+            for(Node u : currentNodeToBeExplored.neighbors){
                 if(!visited.containsKey(u)){
-                    Node currentNeighbor = new Node(u.val,new ArrayList<>());
+                    Node clonedNeighborU = new Node(u.val,new ArrayList<>());
+                    visited.put(u,clonedNeighborU);
                     q.offer(u);
-                    visited.put(u,currentNeighbor);
                 }
-                visited.get(currentNode).neighbors.add(visited.get(u));
+                visited.get(currentNodeToBeExplored).neighbors.add(visited.get(u));
             }
         }
-        return clonedNode;
+return clonedStart;
     }
 }
