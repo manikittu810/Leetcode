@@ -23,29 +23,28 @@ class Solution {
         if(node == null){
             return null;
         }
-        //track visited nodes and their clones.
-        Map<Node,Node> visited = new HashMap<>();
-
-        //initialize the queue and add the startting node;
 
         Queue<Node> q = new LinkedList<>();
+        Map<Node,Node> visited = new HashMap<>();
 
         q.offer(node);
 
-        Node clone = new Node(node.val,new ArrayList<>());
-        visited.put(node,clone);
-
+        Node clonedNode = new Node(node.val,new ArrayList<>());
+        visited.put(node,clonedNode);
+    
         while(!q.isEmpty()){
-            Node current = q.poll();
-            for(Node u : current.neighbors){
+
+            Node currentNode = q.poll();
+
+            for(Node u : currentNode.neighbors){
                 if(!visited.containsKey(u)){
-                    Node cloneTheNeighbor = new Node(u.val,new ArrayList<>());
-                    visited.put(u,cloneTheNeighbor);
+                    Node currentNeighbor = new Node(u.val,new ArrayList<>());
                     q.offer(u);
+                    visited.put(u,currentNeighbor);
                 }
-                visited.get(current).neighbors.add(visited.get(u));
+                visited.get(currentNode).neighbors.add(visited.get(u));
             }
         }
-return clone;
+        return clonedNode;
     }
 }
