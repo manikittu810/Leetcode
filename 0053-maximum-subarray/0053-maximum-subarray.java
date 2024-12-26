@@ -4,9 +4,7 @@ class Solution {
         int localMax = 0; 
         for(int i=0;i<nums.length;i++){
             localMax=Math.max(nums[i],nums[i]+localMax);
-            if(localMax > globalMax){
-                globalMax = localMax;
-            }
+           globalMax = Math.max(localMax,globalMax);
         }
         return globalMax;
     }
