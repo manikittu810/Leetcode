@@ -1,14 +1,15 @@
 class Solution {
+    private Map<Integer,Integer> cache = new HashMap<>();
+
     public int climbStairs(int n) {
         if(n<=1){
             return 1;
         }
-        int first = 1, second =1;
-        for(int i=2;i<=n;i++){
-            int temp = first+second;
-            first = second;
-            second = temp;
+        if(cache.containsKey(n)){
+            return cache.get(n);
         }
-        return second;
+        int result = climbStairs(n-1)+climbStairs(n-2);
+        cache.put(n,result);
+        return result;
     }
 }
