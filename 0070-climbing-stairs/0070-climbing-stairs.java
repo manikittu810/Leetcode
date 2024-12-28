@@ -1,6 +1,5 @@
 class Solution {
     private Map<Integer,Integer> cache = new HashMap<>();
-
     public int climbStairs(int n) {
         if(n<=1){
             return 1;
@@ -8,8 +7,8 @@ class Solution {
         if(cache.containsKey(n)){
             return cache.get(n);
         }
-        int result = climbStairs(n-1)+climbStairs(n-2);
-        cache.put(n,result);
-        return result;
+        int res = climbStairs(n-1)+climbStairs(n-2);
+        cache.put(n,res);
+        return res;
     }
 }
