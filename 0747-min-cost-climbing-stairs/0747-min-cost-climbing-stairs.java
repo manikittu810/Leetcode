@@ -7,9 +7,9 @@ class Solution {
             if(i<cost.length){
                 dp[i] = Math.min(dp[i-1],dp[i-2])+cost[i];
             }
-            else{
-                dp[i] = Math.min(dp[i-1],dp[i-2]);
-            }
+            // else{
+            //     dp[i] = Math.min(dp[i-1],dp[i-2]);
+            // }
     }
 return Math.min(dp[cost.length-1],dp[cost.length-2]);
     }
