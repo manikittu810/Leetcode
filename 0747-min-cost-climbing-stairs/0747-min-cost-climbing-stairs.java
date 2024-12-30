@@ -6,10 +6,10 @@ class Solution {
         dp[1] = cost[1];
         for(int i=2;i<=n;i++){
             if(i<n){
-            dp[i] = Math.min(dp[i-1],dp[i-2])+cost[i];
+            dp[i] = Math.min(dp[i-1],dp[i-2])+cost[i];//consider 
             }
             else{
-                dp[i] = Math.min(dp[i-1],dp[i-2]);
+                dp[i] = Math.min(dp[i-1],dp[i-2]);//donot consider
             }
         }
         return dp[n];
