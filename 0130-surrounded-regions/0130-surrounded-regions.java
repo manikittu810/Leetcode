@@ -2,26 +2,25 @@ class Solution {
     public void solve(char[][] grid) {
         int row = grid.length;
         int col = grid[0].length;
-        Queue<int[]> q = new LinkedList<>();
         int[][]directions = {
             {1,0},{-1,0},{0,1},{0,-1}
         };
 //step1 : 
         for(int i=0;i<row;i++){
             if(grid[i][0]=='O'){
-                bfs(grid,q,i,0,directions);
+                dfs(grid,i,0);
             }
             if(grid[i][col-1]=='O'){
-                bfs(grid,q,i,col-1,directions);
+                dfs(grid,i,col-1);
             }
         }
 
         for(int j=0;j<col;j++){
             if(grid[0][j]=='O'){
-                bfs(grid,q,0,j,directions);
+                dfs(grid,0,j);
             }
             if(grid[row-1][j]=='O'){
-                bfs(grid,q,row-1,j,directions);
+                dfs(grid,row-1,j);
             }
         }
         //step2:
@@ -35,19 +34,14 @@ class Solution {
             }
         }
     }
-    private void bfs(char[][]grid,Queue<int []>q,int i,int j,int[][]directions){
-        grid[i][j] ='#';
-        q.offer(new int[]{i,j});
-        while(!q.isEmpty()){
-            int[]u=q.poll();
-            for(int []d : directions){
-                int newRow = u[0]+d[0];
-                int newCol = u[1]+d[1];
-                if(newRow>=0 &&newCol>=0 && newRow<grid.length && newCol<grid[0].length && grid[newRow][newCol]=='O'){
-                    grid[newRow][newCol]='#';
-                    q.offer(new int[]{newRow,newCol});
-                }
-            }
-        }
+    private void dfs(char[][]grid,int i,int j){
+       if(i<0 || j<0 ||i>=grid.length ||j>=grid[0].length || grid[i][j]!='O'){
+        return;
+       }
+    grid[i][j] = '#';
+    dfs(grid,i+1,j);
+    dfs(grid,i-1,j);
+    dfs(grid,i,j+1);
+    dfs(grid,i,j-1);
     }
 }
