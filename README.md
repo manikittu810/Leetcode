@@ -243,6 +243,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0347-top-k-frequent-elements](https://github.com/manikittu810/Leetcode/tree/master/0347-top-k-frequent-elements) |
 | [0416-partition-equal-subset-sum](https://github.com/manikittu810/Leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0417-pacific-atlantic-water-flow](https://github.com/manikittu810/Leetcode/tree/master/0417-pacific-atlantic-water-flow) |
+| [0494-target-sum](https://github.com/manikittu810/Leetcode/tree/master/0494-target-sum) |
 | [0506-relative-ranks](https://github.com/manikittu810/Leetcode/tree/master/0506-relative-ranks) |
 | [0560-subarray-sum-equals-k](https://github.com/manikittu810/Leetcode/tree/master/0560-subarray-sum-equals-k) |
 | [0695-max-area-of-island](https://github.com/manikittu810/Leetcode/tree/master/0695-max-area-of-island) |
@@ -597,6 +598,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0078-subsets](https://github.com/manikittu810/Leetcode/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/manikittu810/Leetcode/tree/master/0090-subsets-ii) |
 | [0257-binary-tree-paths](https://github.com/manikittu810/Leetcode/tree/master/0257-binary-tree-paths) |
+| [0494-target-sum](https://github.com/manikittu810/Leetcode/tree/master/0494-target-sum) |
 | [0800-letter-case-permutation](https://github.com/manikittu810/Leetcode/tree/master/0800-letter-case-permutation) |
 ## String Matching
 |  |
@@ -615,6 +617,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/manikittu810/Leetcode/tree/master/0070-climbing-stairs) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/manikittu810/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0416-partition-equal-subset-sum](https://github.com/manikittu810/Leetcode/tree/master/0416-partition-equal-subset-sum) |
+| [0494-target-sum](https://github.com/manikittu810/Leetcode/tree/master/0494-target-sum) |
 | [0747-min-cost-climbing-stairs](https://github.com/manikittu810/Leetcode/tree/master/0747-min-cost-climbing-stairs) |
 | [1013-fibonacci-number](https://github.com/manikittu810/Leetcode/tree/master/1013-fibonacci-number) |
 ## Simulation
