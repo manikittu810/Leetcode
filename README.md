@@ -258,6 +258,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1073-number-of-enclaves](https://github.com/manikittu810/Leetcode/tree/master/1073-number-of-enclaves) |
 | [1127-last-stone-weight](https://github.com/manikittu810/Leetcode/tree/master/1127-last-stone-weight) |
 | [1256-rank-transform-of-an-array](https://github.com/manikittu810/Leetcode/tree/master/1256-rank-transform-of-an-array) |
+| [1380-number-of-closed-islands](https://github.com/manikittu810/Leetcode/tree/master/1380-number-of-closed-islands) |
 | [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/manikittu810/Leetcode/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/manikittu810/Leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [1574-maximum-product-of-two-elements-in-an-array](https://github.com/manikittu810/Leetcode/tree/master/1574-maximum-product-of-two-elements-in-an-array) |
@@ -457,6 +458,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1035-cousins-in-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/1035-cousins-in-binary-tree) |
 | [1073-number-of-enclaves](https://github.com/manikittu810/Leetcode/tree/master/1073-number-of-enclaves) |
 | [1079-sum-of-root-to-leaf-binary-numbers](https://github.com/manikittu810/Leetcode/tree/master/1079-sum-of-root-to-leaf-binary-numbers) |
+| [1380-number-of-closed-islands](https://github.com/manikittu810/Leetcode/tree/master/1380-number-of-closed-islands) |
 | [1498-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/manikittu810/Leetcode/tree/master/1498-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [2416-evaluate-boolean-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/2416-evaluate-boolean-binary-tree) |
@@ -491,6 +493,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1035-cousins-in-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/1035-cousins-in-binary-tree) |
 | [1036-rotting-oranges](https://github.com/manikittu810/Leetcode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/manikittu810/Leetcode/tree/master/1073-number-of-enclaves) |
+| [1380-number-of-closed-islands](https://github.com/manikittu810/Leetcode/tree/master/1380-number-of-closed-islands) |
 | [1498-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/manikittu810/Leetcode/tree/master/1498-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree) |
 | [1544-count-good-nodes-in-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/1544-count-good-nodes-in-binary-tree) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/manikittu810/Leetcode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
@@ -674,6 +677,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0695-max-area-of-island](https://github.com/manikittu810/Leetcode/tree/master/0695-max-area-of-island) |
 | [1036-rotting-oranges](https://github.com/manikittu810/Leetcode/tree/master/1036-rotting-oranges) |
 | [1073-number-of-enclaves](https://github.com/manikittu810/Leetcode/tree/master/1073-number-of-enclaves) |
+| [1380-number-of-closed-islands](https://github.com/manikittu810/Leetcode/tree/master/1380-number-of-closed-islands) |
 | [1463-the-k-weakest-rows-in-a-matrix](https://github.com/manikittu810/Leetcode/tree/master/1463-the-k-weakest-rows-in-a-matrix) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/manikittu810/Leetcode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
 | [2585-delete-greatest-value-in-each-row](https://github.com/manikittu810/Leetcode/tree/master/2585-delete-greatest-value-in-each-row) |
@@ -686,6 +690,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0547-number-of-provinces](https://github.com/manikittu810/Leetcode/tree/master/0547-number-of-provinces) |
 | [0695-max-area-of-island](https://github.com/manikittu810/Leetcode/tree/master/0695-max-area-of-island) |
 | [1073-number-of-enclaves](https://github.com/manikittu810/Leetcode/tree/master/1073-number-of-enclaves) |
+| [1380-number-of-closed-islands](https://github.com/manikittu810/Leetcode/tree/master/1380-number-of-closed-islands) |
 ## Recursion
 |  |
 | ------- |
