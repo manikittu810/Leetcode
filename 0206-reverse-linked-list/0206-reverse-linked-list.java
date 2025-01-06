@@ -13,17 +13,20 @@ class Solution {
         if(head == null){
             return null;
         }
-        ListNode prev = null;
         ListNode cur = head;
-        ListNode nuxt = null;
+        ListNode prev = null;
+        ListNode Next = null;
+        while(cur!= null){
+            Next = cur.next;
+            cur.next = prev;
+            prev = cur;
+            cur = Next;
+           
 
-        while(cur!=null){
-            nuxt = cur.next;
-            cur.next =prev;
-            prev =cur;
-            cur=nuxt;
         }
         return prev;
-        
     }
 }
+/*
+null<-Node(prev) Node(Next)(cur)-> Node->null 
+*/
