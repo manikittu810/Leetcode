@@ -15,7 +15,8 @@ class Solution {
             || c == ']' && st.peek() == '[' 
             || c == '}' && st.peek() == '{')){
                     st.pop();
-            }else{
+             }
+             else{
                 st.push(c);
             }
         }
