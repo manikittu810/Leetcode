@@ -9,25 +9,33 @@
  * }
  */
 class Solution {
-    public ListNode mergeTwoLists(ListNode cur1, ListNode cur2) {
-        ListNode dummy = new ListNode(-1);
-        ListNode temp = dummy;
-        while(cur1!=null && cur2!= null){
+    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+        ListNode newList = new ListNode(-1);
+        ListNode dummy = newList;
+        ListNode cur1 = list1;
+        ListNode cur2 = list2;
+        while(cur1!=null && cur2!=null){
             if(cur1.val<=cur2.val){
-                temp.next = cur1;
+                dummy.next = new ListNode(cur1.val);
                 cur1 = cur1.next;
-            }
-            else{
-                temp.next = cur2;
+            }else{
+                dummy.next = new ListNode(cur2.val);
                 cur2 = cur2.next;
             }
-            temp = temp.next;
+            dummy = dummy.next;
         }
-        if(cur1!=null && cur2==null){
-            temp.next = cur1;
-        }else if(cur2!=null && cur1==null){
-            temp.next = cur2;
+
+        while(cur1!=null){
+            dummy.next = new ListNode(cur1.val);
+            cur1 = cur1.next;
+            dummy = dummy.next;
         }
-return dummy.next;
+        while(cur2!=null){
+            dummy.next = new ListNode(cur2.val);
+            cur2 = cur2.next;
+            dummy = dummy.next;
+        }
+
+        return newList.next;
     }
 }
