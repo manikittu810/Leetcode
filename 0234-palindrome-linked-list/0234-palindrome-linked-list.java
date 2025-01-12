@@ -13,41 +13,45 @@ class Solution {
         if(head == null || head.next == null){
             return true;
         }
-        ListNode slow = head;
-        ListNode fast = head;
 
-        while(fast!=null && fast.next != null){
-            slow = slow.next;
-            fast = fast.next.next;
+        ListNode dummy1 = new ListNode(-1);
+        ListNode dummy2 = new ListNode(-1);
+        ListNode first1 = dummy1;
+        ListNode second1 = dummy2;
+
+        int count = 0;
+
+        for(ListNode cur = head ; cur!=null ;cur=cur.next){
+            count++;
         }
 
-        ListNode newList = reverse(slow);
-        ListNode dummyList = head;
+        ListNode cur = head;
 
-        while(newList!=null){
-            if(newList.val!=dummyList.val){
+        for(int i=0;i<count/2;i++){
+            first1.next = new ListNode(cur.val);
+            first1 = first1.next;
+            cur = cur.next;
+        }
+
+        if(count%2!=0){
+            cur = cur.next;
+        }
+
+        while(cur!=null){
+            ListNode temp  = new ListNode(cur.val);
+            temp.next = dummy2.next;
+            dummy2.next = temp;
+            cur = cur.next;
+        }
+        ListNode first = dummy1.next;
+        ListNode second = dummy2.next;
+        while(first!=null && second!=null){
+            if(first.val!=second.val){
                 return false;
-            }else{
-                newList= newList.next;
-                dummyList = dummyList.next;
             }
+            first = first.next;
+            second = second.next;
         }
 return true;
-
-    }
-    private ListNode reverse(ListNode head){
-        if(head == null){
-            return null;
-        }
-        ListNode prev = null;
-        ListNode cur = head;
-        ListNode Next = null;
-        while(cur!=null){
-            Next = cur.next;
-            cur.next = prev ;
-            prev = cur;
-            cur = Next;
-        }
-        return prev;
     }
 }
