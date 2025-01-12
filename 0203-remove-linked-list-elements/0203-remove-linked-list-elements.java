@@ -13,18 +13,10 @@ class Solution {
         if(head == null){
             return null;
         }
-        ListNode dummy = new ListNode(-1);
-        dummy.next = head;
-        ListNode prev = dummy;
-        for(ListNode cur = dummy.next;cur!=null;cur = cur.next){
-            if(cur.val!=val){
-                prev = cur;
-            }
-            else{
-                prev.next = cur.next;
-            }
+        head.next = removeElements(head.next,val);
+        if(head.val == val){
+            head = head.next;
         }
-        prev.next = null;
-        return dummy.next;
+        return head;
     }
 }
