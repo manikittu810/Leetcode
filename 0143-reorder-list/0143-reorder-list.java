@@ -10,45 +10,63 @@
  */
 class Solution {
     public void reorderList(ListNode head) {
-        if(head == null || head.next == null ){
-            return;
+
+        if(head == null||head.next==null){
+            return ;
         }
-        ListNode sptr =head;
-        ListNode fptr = head;
+        ListNode slow = head;
+        ListNode fast = head;
 
-
-        while(fptr!=null && fptr.next!=null){
-            sptr=sptr.next;
-            fptr=fptr.next.next;
+        while(fast!=null && fast.next!=null){
+            slow = slow.next;
+            fast = fast.next.next;
         }
+         ListNode secondHalf = reverse(slow.next);
+        slow.next = null; // Split the list into two halves
+        ListNode firstHalf = head;
 
+        while(secondHalf!= null){
+            ListNode tempfirstHalfval = firstHalf.next;
+            ListNode tempSecondHalfval = secondHalf.next;
 
-        ListNode secondHalf = reverse(sptr.next);
-        sptr.next =null; 
+            firstHalf.next = secondHalf;
+            secondHalf.next = tempfirstHalfval;
 
-        ListNode cur = head;
-        while(secondHalf != null){
-            ListNode curTempNode = cur.next;
-            ListNode secondHalfTempNode = secondHalf.next;
+            firstHalf = tempfirstHalfval;
+            secondHalf = tempSecondHalfval;
 
-            cur.next = secondHalf;
-            secondHalf.next = curTempNode;
-
-            cur = curTempNode;
-            secondHalf = secondHalfTempNode;
         }
     }
-    public ListNode reverse(ListNode head){
-        ListNode prev = null;
-        ListNode cur =head;
-        ListNode nuxt = null;
-        while(cur!=null){
-            nuxt = cur.next;
-            cur.next = prev;
-            prev =cur;
-            cur =nuxt;
+    private ListNode reverse(ListNode head){
+        if(head == null){
+            return null;
         }
-        head =prev;
-        return head;
+        ListNode Next = null;
+        ListNode cur = head;
+        ListNode prev = null;
+
+        while(cur!=null){
+            Next = cur.next;
+            cur.next = prev;
+            prev = cur;
+            cur = Next;
+        }
+        return prev;
     }
 }
+/*
+
+1 2 3 4 t1
+1 2 3 4 5 t2
+
+dummyNode = -1;
+
+hare and tortoise algorithm 
+slow pointer we gonna get the middle of LL
+123
+45 -> reverse this  5 4
+l1.next = new ListNode(l2.val);
+l1.next and l2.next 
+1 2
+ 3 4 -> reverse this -> 4 3
+*/
