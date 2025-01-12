@@ -10,10 +10,10 @@
  */
 class Solution {
     public void reorderList(ListNode head) {
-
-        if(head == null||head.next==null){
+        if(head == null || head.next == null){
             return ;
         }
+
         ListNode slow = head;
         ListNode fast = head;
 
@@ -21,30 +21,28 @@ class Solution {
             slow = slow.next;
             fast = fast.next.next;
         }
-         ListNode secondHalf = reverse(slow.next);
-        slow.next = null; // Split the list into two halves
+
+        ListNode secondHalf = reverse(slow.next);
+        slow.next = null;
+
         ListNode firstHalf = head;
-
-        while(secondHalf!= null){
-            ListNode tempfirstHalfval = firstHalf.next;
-            ListNode tempSecondHalfval = secondHalf.next;
-
+        while(secondHalf!=null){
+            ListNode temp1 = firstHalf.next;
+            ListNode temp2 = secondHalf.next;
             firstHalf.next = secondHalf;
-            secondHalf.next = tempfirstHalfval;
-
-            firstHalf = tempfirstHalfval;
-            secondHalf = tempSecondHalfval;
-
+            secondHalf.next = temp1;
+            firstHalf = temp1;
+            secondHalf = temp2;
         }
     }
     private ListNode reverse(ListNode head){
         if(head == null){
             return null;
         }
-        ListNode Next = null;
-        ListNode cur = head;
-        ListNode prev = null;
 
+        ListNode Next = null;
+        ListNode prev = null;
+        ListNode cur = head;
         while(cur!=null){
             Next = cur.next;
             cur.next = prev;
@@ -54,19 +52,3 @@ class Solution {
         return prev;
     }
 }
-/*
-
-1 2 3 4 t1
-1 2 3 4 5 t2
-
-dummyNode = -1;
-
-hare and tortoise algorithm 
-slow pointer we gonna get the middle of LL
-123
-45 -> reverse this  5 4
-l1.next = new ListNode(l2.val);
-l1.next and l2.next 
-1 2
- 3 4 -> reverse this -> 4 3
-*/
