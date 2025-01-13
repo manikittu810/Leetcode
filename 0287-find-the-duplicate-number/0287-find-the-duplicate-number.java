@@ -6,10 +6,10 @@ class Solution {
         do{
             slow = a[slow];
             fast = a[a[fast]];
-
         }while(slow!=fast);
 
         slow = a[0];
+
         while(slow!=fast){
             slow = a[slow];
             fast = a[fast];
