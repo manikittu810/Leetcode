@@ -23,7 +23,7 @@ class Solution {
         }
 
         cur = head;
-        for(int i=1;i<targetNode;i++){
+        for(int i=0;i<targetNode-1;i++){
             cur = cur.next;
         }
         cur.next = cur.next.next;
