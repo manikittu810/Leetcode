@@ -35,7 +35,6 @@ class Solution {
 
             cur = cur.next;
         }
-        System.out.println(cur.val);
         cur.next = cur.next.next;
         return head;
     }
