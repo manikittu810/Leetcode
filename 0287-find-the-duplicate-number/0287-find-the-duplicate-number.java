@@ -9,7 +9,7 @@ class Solution {
         }while(slow!=fast);
 
         slow = a[0];
-         while(fast!=slow){
+         while(slow!=fast){
             slow = a[slow];
             fast = a[fast];
          }
