@@ -1,31 +1,39 @@
-import java.util.Hashtable;
+/*
+// Definition for a Node.
+class Node {
+    int val;
+    Node next;
+    Node random;
+
+    public Node(int val) {
+        this.val = val;
+        this.next = null;
+        this.random = null;
+    }
+}
+*/
+
 class Solution {
     public Node copyRandomList(Node head) {
-        if (head == null) {
-            return null;
-        }
-        
-        // Step 1: Create a mapping from original nodes to their clones
-        Hashtable<Node, Node> ht = new Hashtable<>();
         Node cur = head;
 
-        // First pass: Create all nodes and store them in the hashtable
-        while (cur != null) {
-            ht.put(cur, new Node(cur.val));
+        HashMap<Node,Node> map = new HashMap<>();
+
+        while(cur!=null){
+            map.put(cur,new Node(cur.val));
             cur = cur.next;
         }
 
-        // Step 2: Assign next and random pointers
         cur = head;
 
-        while (cur != null) {
-            Node duplicateNode = ht.get(cur);
-            duplicateNode.next = (cur.next != null) ? ht.get(cur.next) : null;
-            duplicateNode.random = (cur.random != null) ? ht.get(cur.random) : null;
+        while(cur!=null){
+            Node copyNode = map.get(cur);
+            copyNode.next = map.get(cur.next);
+            copyNode.random = map.get(cur.random);
             cur = cur.next;
         }
 
-        // Return the head of the cloned list
-        return ht.get(head);
+        Node headNew = map.get(head);
+        return headNew;
     }
 }
