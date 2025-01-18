@@ -25,15 +25,13 @@ class Solution {
         }
 
         cur = head;
-
         while(cur!=null){
             Node copyNode = map.get(cur);
             copyNode.next = map.get(cur.next);
             copyNode.random = map.get(cur.random);
             cur = cur.next;
-        }
-
-        Node headNew = map.get(head);
-        return headNew;
+        } 
+        return map.get(head);
+        
     }
 }
