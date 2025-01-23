@@ -8,34 +8,44 @@
  *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
  * }
  */
+
 class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        ListNode newList = new ListNode(-1);
-        ListNode dummy = newList;
-        ListNode cur1 = list1;
-        ListNode cur2 = list2;
-        while(cur1!=null && cur2!=null){
-            if(cur1.val<=cur2.val){
-                dummy.next = new ListNode(cur1.val);
-                cur1 = cur1.next;
+
+        ListNode dummy = new ListNode(-1);
+        ListNode cur = dummy;
+
+        while(list1!=null && list2!=null){
+
+            if(list1.val<=list2.val){
+
+                cur.next = new ListNode(list1.val);
+                System.out.println(cur.next.val);
+                list1=list1.next;
+                cur = cur.next;
+
             }else{
-                dummy.next = new ListNode(cur2.val);
-                cur2 = cur2.next;
+
+                cur.next = new ListNode(list2.val);
+                System.out.println(cur.next.val);
+                list2 = list2.next;
+                cur =cur.next;
+
             }
-            dummy = dummy.next;
         }
 
-        while(cur1!=null){
-            dummy.next = new ListNode(cur1.val);
-            cur1 = cur1.next;
-            dummy = dummy.next;
-        }
-        while(cur2!=null){
-            dummy.next = new ListNode(cur2.val);
-            cur2 = cur2.next;
-            dummy = dummy.next;
+        if(list1!=null){
+            cur.next = list1;
         }
 
-        return newList.next;
+        if(list2!=null){
+            cur.next = list2;
+        }
+
+    return dummy.next;
+
     }
 }
+/*
+
+ */
