@@ -20,14 +20,12 @@ class Solution {
             if(list1.val<=list2.val){
 
                 cur.next = new ListNode(list1.val);
-                System.out.println(cur.next.val);
                 list1=list1.next;
                 cur = cur.next;
 
             }else{
 
                 cur.next = new ListNode(list2.val);
-                System.out.println(cur.next.val);
                 list2 = list2.next;
                 cur =cur.next;
 
