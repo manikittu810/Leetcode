@@ -1,60 +1,82 @@
 class LRUCache {
 
-    Node head = new Node(0,0), tail = new Node(0,0);
-    HashMap<Integer,Node> map = new HashMap<>();
-
-    int cap;
+    class Node{
+            int key,val;
+            Node prev,next;
+            Node(int key,int val){
+                this.key = key;
+                this.val = val;
+            }
+        }
+        private Node head;
+        private Node tail;
+        private Map<Integer,Node> map;
+        private int capacity;
 
     public LRUCache(int capacity) {
-        cap = capacity;
+        this.capacity = capacity;
+        map = new HashMap<>();
+        head = new Node(0,0);
+        tail = new Node(0,0);
         head.next = tail;
         tail.prev = head;
     }
     
     public int get(int key) {
-        if(map.containsKey(key)){
-            Node node = map.get(key);
-            remove(node);
-            insert(node);
-            return node.value;
-        }
-        else{
+
+        Node node = map.get(key);
+
+        if(node == null){
             return -1;
         }
+
+        removeNode(node);
+
+        addAtHead(node);
+
+        return node.val;
     }
     
     public void put(int key, int value) {
-        if(map.containsKey(key)){
-            remove(map.get(key));
+
+       if(map.containsKey(key)){
+
+        Node node = map.get(key);
+        node.val = value;
+
+        removeNode(node);
+
+        addAtHead(node);
+
+       }else{
+
+        if(map.size()==capacity){
+
+            Node lru = removeAtTail();
+            map.remove(lru.key);
         }
-        else if(map.size() == cap){
-            remove(tail.prev);
-        }
-        insert(new Node(key,value));
+
+       Node newNode  = new Node(key,value);
+       addAtHead(newNode);
+       map.put(key,newNode);
+       }
     }
 
-    private void insert(Node node){
-        map.put(node.key,node);
-        Node headNext = head.next;
-        head.next = node; 
+    public void addAtHead(Node node){
+        node.next = head.next;
+        head.next.prev = node;
         node.prev = head;
-        node.next = headNext;
-        headNext.prev = node;
+        head.next = node;
     }
-    private void remove(Node node){
-        map.remove(node.key);
-        node.prev.next = node.next;
+
+    public Node removeAtTail(){
+        Node lru = tail.prev;
+        removeNode(lru);
+        return lru;
+    }
+    public void removeNode(Node node){
         node.next.prev = node.prev;
-    }
-    class Node{
-        int key,value;
-        Node prev, next;
-        Node(int key,int value){
-            this.key = key;
-            this.value = value;
-            prev = null;
-            next = null;
-        }
+        node.prev.next = node.next;
     }
 }
 
