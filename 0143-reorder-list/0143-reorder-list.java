@@ -36,7 +36,7 @@ class Solution {
             list1 = list1.next;
 
             list1.next = temp1;
-            list1 = list1.next;
+            list1 = temp1;
 
 
             list2 = list2.next;
