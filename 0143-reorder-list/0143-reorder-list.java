@@ -36,8 +36,6 @@ class Solution {
         while(list1!=null && list2!=null){
             ListNode temp = list1.next;
             list1.next = new ListNode(list2.val);
-            System.out.println(list1.next.val);
-            // 1->5
             list1 = list1.next;
             list1.next = temp;
             list1=list1.next;
