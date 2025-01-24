@@ -6,9 +6,8 @@ class Solution {
             slow = a[slow];
             fast = a[a[fast]];
         }while(slow!=fast);
-
         slow = a[0];
-        while(slow!=fast){
+        while(slow != fast){
             slow = a[slow];
             fast = a[fast];
         }
