@@ -9,40 +9,46 @@
  * }
  */
 class Solution {
-    public void reorderList(ListNode head) {
-        if(head == null || head.next == null){
-            return ;
-        }
 
-        ListNode slow = head;
-        ListNode fast = head;
+    public void reorderList(ListNode head) {
+        ListNode cur = head;
+        int count = 0;
+
+       for(ListNode i=cur; i!=null;i=i.next){
+        count++;
+       }
+
+        cur = head;
+
+        ListNode fast = cur;
+        ListNode slow = cur;
 
         while(fast!=null && fast.next!=null){
             slow = slow.next;
             fast = fast.next.next;
         }
 
-        ListNode secondHalf = reverse(slow.next);
+        ListNode list2 = reverse(slow.next);
         slow.next = null;
+        cur = head;
+        ListNode list1 = cur;
 
-        ListNode firstHalf = head;
-        while(secondHalf!=null){
-            ListNode temp1 = firstHalf.next;
-            ListNode temp2 = secondHalf.next;
-            firstHalf.next = secondHalf;
-            secondHalf.next = temp1;
-            firstHalf = temp1;
-            secondHalf = temp2;
+        while(list1!=null && list2!=null){
+            ListNode temp = list1.next;
+            list1.next = new ListNode(list2.val);
+            System.out.println(list1.next.val);
+            // 1->5
+            list1 = list1.next;
+            list1.next = temp;
+            list1=list1.next;
+            list2 = list2.next;
         }
     }
-    private ListNode reverse(ListNode head){
-        if(head == null){
-            return null;
-        }
 
-        ListNode Next = null;
+    private ListNode reverse(ListNode node){
         ListNode prev = null;
-        ListNode cur = head;
+        ListNode cur = node;
+        ListNode Next = null;
         while(cur!=null){
             Next = cur.next;
             cur.next = prev;
