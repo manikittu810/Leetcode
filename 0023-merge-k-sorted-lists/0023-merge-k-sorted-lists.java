@@ -13,8 +13,8 @@ class Solution {
         if(lists.length==0){
             return null;
         }
-        PriorityQueue<ListNode> minHeap = new PriorityQueue<>((a,b)->a.val-b.val);
-        for(ListNode newHead : lists){
+        PriorityQueue<ListNode>minHeap = new PriorityQueue<>((a,b)->a.val-b.val);
+        for(ListNode newHead :lists){
             if(newHead!=null){
                 minHeap.offer(newHead);
             }
@@ -26,8 +26,8 @@ class Solution {
         while(!minHeap.isEmpty()){
             ListNode node = minHeap.poll();
             cur.next = node;
+            node= node.next;
             cur = cur.next;
-            node = node.next;
             if(node!=null){
                 minHeap.offer(node);
             }
