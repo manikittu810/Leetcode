@@ -13,18 +13,18 @@ class Solution {
         ListNode dummy = new ListNode(-1);
         dummy.next = head;
 
-        ListNode firstPtr = dummy;
-        ListNode secondPtr = dummy;
+        ListNode ptr1 = dummy;
 
-        for(int i=0;i<n;i++){
-            firstPtr = firstPtr.next;
+        for(int i =0;i<n;i++){
+            ptr1=ptr1.next;
         }
-        while(firstPtr.next!=null){
-            firstPtr = firstPtr.next;
-            secondPtr = secondPtr.next;
+
+        ListNode ptr2 = dummy;
+        while(ptr1.next!=null){
+            ptr1=ptr1.next;
+            ptr2=ptr2.next;
         }
-        secondPtr.next = secondPtr.next.next;
+        ptr2.next = ptr2.next.next;
         return dummy.next;
-
     }
 }
