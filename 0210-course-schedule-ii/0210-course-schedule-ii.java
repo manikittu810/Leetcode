@@ -42,6 +42,6 @@ class Solution {
                 }
             }
         }
-        return res;
+        return (idx == V) ? res :new int[0];
     }
 }
