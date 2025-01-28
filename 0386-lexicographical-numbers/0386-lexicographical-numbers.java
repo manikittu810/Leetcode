@@ -1,13 +1,12 @@
 class Solution {
     public List<Integer> lexicalOrder(int n) {
-        List<Integer> l = new ArrayList<>();
+        List<Integer> l= new ArrayList<>();
         for(int i=1;i<=9;i++){
-            dfs(l,i,n);
+            dfs(i,l,n);
         }
         return l;
     }
-    private void dfs(List<Integer> l, int source,int n ){
-
+    private void dfs(int source,List<Integer> l,int n ){
         if(source>n){
             return ;
         }
@@ -16,7 +15,7 @@ class Solution {
             if(source*10+j>n){
                 break;
             }
-            dfs(l,source*10+j,n);
+            dfs(source*10+j,l,n);
         }
     }
 }
