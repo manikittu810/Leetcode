@@ -13,6 +13,9 @@ class Solution {
         }
         l.add(source);
         for(int j=0;j<=9;j++){
+            if(source*10+j>n){
+                break;
+            }
             dfs(l,source*10+j,n);
         }
     }
