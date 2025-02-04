@@ -1,53 +1,50 @@
 class Solution {
     public boolean isValidSudoku(char[][] board) {
-        for(int r=0;r<9;r++){
-            Set<Character> rSet = new HashSet<>();
-            for(int c=0;c<9;c++){
-                if(board[r][c]=='.'){
+        for(int row =0;row<board.length;row++){
+            Set<Character> rowSet = new HashSet<>();
+            for(int col = 0;col<board[0].length;col++){
+                if(board[row][col]=='.'){
                     continue;
                 }
-
-                if(rSet.contains(board[r][c])){
+                else if(rowSet.contains(board[row][col])){
                     return false;
+                }else{
+                    rowSet.add(board[row][col]);
                 }
-
-                rSet.add(board[r][c]);
             }
         }
 
-        for(int c=0;c<9;c++){
-        Set<Character> cSet = new HashSet<>();
-        for(int r =0;r<9;r++){
-            if(board[r][c] == '.'){
-                continue;
+        for(int col = 0;col<board.length;col++){
+            Set<Character> colSet = new HashSet<>();
+            for(int row =0;row<9;row++){
+                if(board[row][col]=='.'){
+                    continue;
+                }
+                else if(colSet.contains(board[row][col])){
+                    return false;
+                }else{
+                    colSet.add(board[row][col]);
+                }
             }
-
-            if(cSet.contains(board[r][c])){
-                return false;
-            }
-            cSet.add(board[r][c]);
         }
 
-        }
-
-        for(int smallGrid = 0;smallGrid < 9 ; smallGrid++){
-            Set<Character> gridSet = new HashSet<>();
+        for(int smallGrid = 0;smallGrid<9;smallGrid++){
+            Set<Character> smallGrids = new HashSet<>();
             int i = (smallGrid/3)*3;
-            int j = (smallGrid%3)*3;
-            for(int r =0;r<3;r++){
+            int j =(smallGrid%3)*3;
+            for(int r=0;r<3;r++){
                 for(int c=0;c<3;c++){
                     int row = i+r;
-                    int col = j+c;
-
+                    int col = c+j;
                     if(board[row][col] == '.'){
                         continue;
                     }
-
-                    if(gridSet.contains(board[row][col])){
+                    else if(smallGrids.contains(board[row][col])){
                         return false;
                     }
-
-                    gridSet.add(board[row][col]);
+                    else{
+                        smallGrids.add(board[row][col]);
+                    }
                 }
             }
         }
