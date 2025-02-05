@@ -19,18 +19,19 @@ class Solution {
             slow = slow.next;
             fast = fast.next.next;
         }
+        
         ListNode list2 = reverse(slow.next);
         slow.next=null;
         ListNode list1 = head;
         while(list1!=null && list2!=null){
             ListNode temp = list1.next;
-            ListNode temp2 = list2.next;
+            // ListNode temp2 = list2.next;
 
             list1.next = list2;
             list1 = list1.next;
+            list2=list2.next;
             list1.next = temp;
             list1 = list1.next;
-            list2 = temp2;
         }
 
     }
