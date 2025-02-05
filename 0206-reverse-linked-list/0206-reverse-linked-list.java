@@ -13,10 +13,9 @@ class Solution {
         if(head == null){
             return null;
         }
-
         ListNode cur = head;
-        ListNode prev = null;
         ListNode Next = null;
+        ListNode prev = null;
         while(cur!=null){
             Next = cur.next;
             cur.next = prev;
@@ -24,5 +23,6 @@ class Solution {
             cur = Next;
         }
         return prev;
+
     }
 }
