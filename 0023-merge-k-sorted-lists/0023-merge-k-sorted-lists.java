@@ -10,27 +10,25 @@
  */
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
-        ListNode cur = new ListNode(-1);
-        ListNode dummy = cur;
-        PriorityQueue<ListNode> minHeap = new PriorityQueue<>((a,b) -> a.val-b.val);
+        ListNode dummy = new ListNode(-1);
+        ListNode cur = dummy;
+        PriorityQueue<ListNode> minHeap = new PriorityQueue<>((a,b)->a.val-b.val);
 
-        for(ListNode node : lists){
-            if(node!=null){
-            minHeap.offer(node);
+        for(ListNode newHead : lists){
+            if(newHead!=null){
+                minHeap.offer(newHead);
             }
         }
-
         while(minHeap.size()>0){
-
             ListNode node = minHeap.poll();
-
-            dummy.next = node;
-            dummy = dummy.next;
-            node=node.next;
+            cur.next = node;
+            cur = cur.next;
+            node = node.next;
             if(node!=null){
-            minHeap.offer(node);
+                minHeap.offer(node);
             }
+
         }
-return cur.next;
+        return dummy.next;
     }
 }
