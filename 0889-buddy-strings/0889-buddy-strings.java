@@ -5,8 +5,10 @@ class Solution {
 
         if(s.equals(g)){
             for(Character c :s.toCharArray()){
-                if(!set.add(c)){
+                if(set.contains(c)){
                     return true;
+                }else{
+                set.add(c);
                 }
             }
             return  false;
