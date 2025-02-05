@@ -26,14 +26,15 @@ class Solution {
             cur = cur.next;
             newNode = newNode.next;
         }
-         cur = head;
+        cur = head;
         while(cur!=null){
             Node node = map.get(cur);
             node.next = map.get(cur.next);
             node.random = map.get(cur.random);
-            cur = cur.next ;
-            node= node.next;
+            node = node.next;
+            cur = cur.next;
         }
         return map.get(head);
+        
     }
 }
