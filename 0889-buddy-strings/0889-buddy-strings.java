@@ -4,14 +4,14 @@ class Solution {
             Set<Character> set = new HashSet<>();
 
         if(s.equals(g)){
+            int []freqCount = new int[26];
             for(Character c :s.toCharArray()){
-                if(set.contains(c)){
-                    return true;
-                }else{
-                set.add(c);
-                }
+               freqCount[c-'a']++;
+               if(freqCount[c-'a']>1){
+                return true;
+               }
             }
-            return  false;
+            return false;
         }
 
         List<Integer> l = new ArrayList<>();
