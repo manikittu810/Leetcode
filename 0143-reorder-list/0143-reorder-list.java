@@ -10,16 +10,14 @@
  */
 class Solution {
     public void reorderList(ListNode head) {
-        if(head == null){
+        if(head == null||head.next ==null){
             return ;
         }
-        int count =0;
-        for(ListNode c = head;c!=null;c=c.next){
-            count++;
-        }
         ListNode slow = head;
-        for(int i=0;i<count/2;i++){
+        ListNode fast = head;
+        while(fast!=null && fast.next!=null){
             slow = slow.next;
+            fast = fast.next.next;
         }
        
         ListNode secondList =  reverse(slow.next);
@@ -29,14 +27,13 @@ class Solution {
         while(firstList!=null &&secondList!=null){
             ListNode temp = firstList.next;
             ListNode temp2 =  secondList.next;
-            firstList.next = secondList;
+            firstList.next = new ListNode(secondList.val);
             firstList = firstList.next;
-            secondList = secondList.next;
             firstList.next = temp;
-            // secondList.next = temp2;
             firstList = firstList.next;
-            // secondList = secondList.next;
-            
+            secondList = temp2;
+
+
         }
     }
     private ListNode reverse(ListNode head){
