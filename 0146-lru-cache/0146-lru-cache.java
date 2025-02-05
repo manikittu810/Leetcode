@@ -1,69 +1,71 @@
 class LRUCache {
-    class ListNode{
+
+    class Node{
         int key,val;
-        ListNode prev,next;
-        ListNode(int key,int val){
-            this.key = key;
+        Node prev,next;
+        Node(int key,int val){
             this.val = val;
+            this.key = key;
         }
     }
-    private int capacity;
-    private Map<Integer,ListNode> map;
-    private ListNode head;
-    private ListNode tail;
+
+    private Node head,tail;
+    private final int capacity;
+    Map<Integer,Node> map;
 
 
     public LRUCache(int capacity) {
         this.capacity = capacity;
-        map = new HashMap<>();
-        head = new ListNode(0,0);
-        tail = new ListNode(0,0);
+        head = new Node(0,0);
+        tail = new Node(0,0);
         head.next = tail;
         tail.prev = head;
+        map = new HashMap<>();
     }
     
     public int get(int key) {
-        ListNode node = map.get(key);
+        Node node = map.get(key);
         if(node == null){
             return -1;
         }
         removeNode(node);
-        addAtHead(node);
+        addToHead(node);
         return node.val;
+        
     }
-    public void removeNode(ListNode node){
-        node.next.prev = node.prev;
+    public void removeNode(Node node){
         node.prev.next = node.next;
+        node.next.prev = node.prev;
     }
-    public void addAtHead(ListNode node){
+    public void addToHead(Node node){
         node.next = head.next;
         node.next.prev = node;
-        node.prev = head;
         head.next = node;
+        node.prev = head;
+    }
+    public Node removeAtTail(){
+        Node node = tail.prev;
+        removeNode(node);
+        return node;
     }
     
     public void put(int key, int value) {
-
         if(map.containsKey(key)){
-            ListNode node = map.get(key);
-            node.val = value;            
+            Node node = map.get(key);
+            node.val = value;
             removeNode(node);
-            addAtHead(node);
+            addToHead(node);
+            // how to insert this back into map
         }else{
-            if(map.size()== capacity){
-                ListNode lru = removeAtTail();
-                map.remove(lru.key);
+            if(capacity == map.size()){
+                Node node = removeAtTail();
+                map.remove(node.key);
             }
-            ListNode node = new ListNode(key,value);
-            addAtHead(node);
-            map.put(key,node);
+            Node newNode = new Node(key,value);
+            map.put(key,newNode);
+            addToHead(newNode);
         }
-        
-    }
-    private ListNode removeAtTail(){
-        ListNode lru = tail.prev;
-        removeNode(lru);
-        return lru;
+       
     }
 }
 
