@@ -10,39 +10,46 @@
  */
 class Solution {
     public void reorderList(ListNode head) {
-        if(head == null || head.next == null){
+        if(head == null){
             return ;
         }
+        int count =0;
+        for(ListNode c = head;c!=null;c=c.next){
+            count++;
+        }
         ListNode slow = head;
-        ListNode fast = head;
-
-        while(fast!=null && fast.next != null){
+        for(int i=0;i<count/2;i++){
             slow = slow.next;
-            fast = fast.next.next;
         }
-        ListNode list2 = reverse(slow.next);
-        slow.next = null;
-        ListNode list1 = head;
-        while(list1!=null && list2!=null){
-            ListNode temp1 = list1.next;
-            ListNode temp2 = list2.next;
+       
+        ListNode secondList =  reverse(slow.next);
+        slow.next =null;
+        ListNode firstList = head;
 
-            list1.next = new ListNode(list2.val);
-            list1 = list1.next;
-            list1.next = temp1;
-            list1 = list1.next;
-            list2 = temp2;
+        while(firstList!=null &&secondList!=null){
+            ListNode temp = firstList.next;
+            ListNode temp2 =  secondList.next;
+            firstList.next = secondList;
+            firstList = firstList.next;
+            secondList = secondList.next;
+            firstList.next = temp;
+            // secondList.next = temp2;
+            firstList = firstList.next;
+            // secondList = secondList.next;
+            
         }
-        
     }
     private ListNode reverse(ListNode head){
+        if(head == null){
+            return null;
+        }
+        ListNode Next = null;
         ListNode cur = head;
         ListNode prev = null;
-        ListNode Next = null;
         while(cur!=null){
             Next = cur.next;
             cur.next = prev;
-            prev =cur;
+            prev = cur;
             cur = Next;
         }
         return prev;
