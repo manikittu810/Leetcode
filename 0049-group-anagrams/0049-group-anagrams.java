@@ -10,6 +10,6 @@ class Solution {
             }
             map.get(s1).add(s);
         }
-        return new ArrayList(map.values());
+        return new ArrayList<>(map.values());
     }
 }
