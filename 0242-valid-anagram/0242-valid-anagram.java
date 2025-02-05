@@ -13,11 +13,11 @@ class Solution {
                 return false;
             }
         }
-        for(int i :c1){
-            if(i!=0){
-                return false;
-            }
-        }
+        // for(int i :c1){
+        //     if(i!=0){
+        //         return false;
+        //     }
+        // }
     return true;
     }
 }
