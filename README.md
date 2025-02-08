@@ -321,6 +321,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/manikittu810/Leetcode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/manikittu810/Leetcode/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/manikittu810/Leetcode/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
+| [2434-design-a-number-container-system](https://github.com/manikittu810/Leetcode/tree/master/2434-design-a-number-container-system) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/manikittu810/Leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/manikittu810/Leetcode/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/manikittu810/Leetcode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
@@ -369,6 +370,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/manikittu810/Leetcode/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2327-largest-number-after-digit-swaps-by-parity](https://github.com/manikittu810/Leetcode/tree/master/2327-largest-number-after-digit-swaps-by-parity) |
 | [2412-minimum-amount-of-time-to-fill-cups](https://github.com/manikittu810/Leetcode/tree/master/2412-minimum-amount-of-time-to-fill-cups) |
+| [2434-design-a-number-container-system](https://github.com/manikittu810/Leetcode/tree/master/2434-design-a-number-container-system) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/manikittu810/Leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manikittu810/Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2585-delete-greatest-value-in-each-row](https://github.com/manikittu810/Leetcode/tree/master/2585-delete-greatest-value-in-each-row) |
@@ -639,6 +641,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0146-lru-cache](https://github.com/manikittu810/Leetcode/tree/master/0146-lru-cache) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/manikittu810/Leetcode/tree/master/0789-kth-largest-element-in-a-stream) |
+| [2434-design-a-number-container-system](https://github.com/manikittu810/Leetcode/tree/master/2434-design-a-number-container-system) |
 ## Data Stream
 |  |
 | ------- |
@@ -829,4 +832,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0948-sort-an-array](https://github.com/manikittu810/Leetcode/tree/master/0948-sort-an-array) |
+## Ordered Set
+|  |
+| ------- |
+| [2434-design-a-number-container-system](https://github.com/manikittu810/Leetcode/tree/master/2434-design-a-number-container-system) |
 <!---LeetCode Topics End-->
