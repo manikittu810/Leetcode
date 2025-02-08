@@ -7,13 +7,12 @@ class Solution {
         int[] res = new int[a.length];
 
         for (int i = 0; i < a.length; i++) {
-            int x = a[i][0]; // Ball ID
-            int y = a[i][1]; // Color
+            int x = a[i][0]; 
+            int y = a[i][1]; 
 
             if (map.containsKey(x)) {
                 int oldColor = map.get(x);
                 if (oldColor != y) {
-                    // Decrease count of the old color safely
                     colorCount.put(oldColor, colorCount.getOrDefault(oldColor, 0) - 1);
                     
                     // If no balls use the old color, remove it from set
@@ -33,11 +32,9 @@ class Solution {
                 map.put(x, y);
             }
 
-            // Increase count of the new color
             colorCount.put(y, colorCount.getOrDefault(y, 0) + 1);
             set.add(y);
 
-            // Store current number of unique colors
             res[i] = set.size();
         }
 
