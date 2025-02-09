@@ -8,26 +8,27 @@ class NumberContainers {
         valueMap = new HashMap<>();
     }
     
-    public void change(int idx, int val) {
-        if(indexMap.containsKey(idx)){
-            int oldVal = indexMap.get(idx);
-            if(valueMap.containsKey(oldVal)){
-                valueMap.get(oldVal).remove(idx);
-                if(valueMap.get(oldVal).isEmpty()){
-                    valueMap.remove(oldVal);
+    public void change(int index, int number) {
+        if(indexMap.containsKey(index)){
+            int oldValue = indexMap.get(index);
+            if(valueMap.containsKey(oldValue)){
+                valueMap.get(oldValue).remove(index);
+                if(valueMap.get(oldValue).isEmpty()){
+                    valueMap.remove(oldValue);
                 }
             }
         }
-        indexMap.put(idx,val);
-        valueMap.putIfAbsent(val,new TreeSet<>());
-        valueMap.get(val).add(idx);
+
+        indexMap.put(index,number);
+        valueMap.putIfAbsent(number,new TreeSet<>());
+        valueMap.get(number).add(index);
     }
     
     public int find(int number) {
-        if(!valueMap.containsKey(number) || valueMap.get(number).isEmpty()){
-            return -1;
+        if(valueMap.containsKey(number)){
+            return valueMap.get(number).first();
         }
-        return valueMap.get(number).first();
+        return -1;
         
     }
 }
