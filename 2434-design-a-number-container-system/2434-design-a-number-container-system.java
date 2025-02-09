@@ -1,34 +1,34 @@
 class NumberContainers {
-
-    Map<Integer,Integer> indexMap ;
+    Map<Integer,Integer> indexMap;
     Map<Integer,TreeSet<Integer>> valueMap;
+
 
     public NumberContainers() {
         indexMap = new HashMap<>();
         valueMap = new HashMap<>();
     }
     
-    public void change(int index, int value) {
-
-        if(indexMap.containsKey(index)){
-            int oldValue = indexMap.get(index);
-            if(valueMap.containsKey(oldValue)){ 
-                valueMap.get(oldValue).remove(index);
-                if(valueMap.get(oldValue).size()==0){
-                    valueMap.remove(oldValue);
+    public void change(int idx, int val) {
+        if(indexMap.containsKey(idx)){
+            int oldVal = indexMap.get(idx);
+            if(valueMap.containsKey(oldVal)){
+                valueMap.get(oldVal).remove(idx);
+                if(valueMap.get(oldVal).isEmpty()){
+                    valueMap.remove(oldVal);
                 }
             }
         }
-        indexMap.put(index,value);
-        valueMap.putIfAbsent(value,new TreeSet<>());
-        valueMap.get(value).add(index);
+        indexMap.put(idx,val);
+        valueMap.putIfAbsent(val,new TreeSet<>());
+        valueMap.get(val).add(idx);
     }
     
-    public int find(int value) {
-        if(!valueMap.containsKey(value)||valueMap.get(value).isEmpty()){
+    public int find(int number) {
+        if(!valueMap.containsKey(number) || valueMap.get(number).isEmpty()){
             return -1;
         }
-        return valueMap.get(value).first();
+        return valueMap.get(number).first();
+        
     }
 }
 
