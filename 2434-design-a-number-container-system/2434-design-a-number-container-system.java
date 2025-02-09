@@ -1,35 +1,40 @@
 class NumberContainers {
 
-    private Map<Integer, TreeSet<Integer>> numberToIndices;
-    private Map<Integer, Integer> indexToNumbers;
-    public NumberContainers() {
-        numberToIndices = new HashMap<>();
-        indexToNumbers = new HashMap<>();
-    }
+    Map<Integer,Integer> indexMap ;
+    Map<Integer,TreeSet<Integer>> valueMap;
 
-    public void change(int index, int number) {
-        if (indexToNumbers.containsKey(index)) {
-            int previousNumber = indexToNumbers.get(index);
-            numberToIndices.get(previousNumber).remove(index);
-            if (numberToIndices.get(previousNumber).isEmpty()) {
-                numberToIndices.remove(previousNumber);
+    public NumberContainers() {
+        indexMap = new HashMap<>();
+        valueMap = new HashMap<>();
+    }
+    
+    public void change(int index, int value) {
+
+        if(indexMap.containsKey(index)){
+            int oldValue = indexMap.get(index);
+            if(valueMap.containsKey(oldValue)){ 
+                valueMap.get(oldValue).remove(index);
+                if(valueMap.get(oldValue).size()==0){
+                    valueMap.remove(oldValue);
+                }
             }
         }
-        indexToNumbers.put(index, number);
-        numberToIndices.putIfAbsent(number, new TreeSet<>());
-        numberToIndices.get(number).add(index);
+        indexMap.put(index,value);
+        valueMap.putIfAbsent(value,new TreeSet<>());
+        valueMap.get(value).add(index);
     }
-
-    public int find(int number) {
-        if (numberToIndices.containsKey(number)) {
-            return numberToIndices.get(number).first(); 
+    
+    public int find(int value) {
+        if(!valueMap.containsKey(value)||valueMap.get(value).isEmpty()){
+            return -1;
         }
-        return -1;
+        return valueMap.get(value).first();
     }
 }
+
 /**
  * Your NumberContainers object will be instantiated and called as such:
  * NumberContainers obj = new NumberContainers();
- * obj.change(index, number);
+ * obj.change(index,number);
  * int param_2 = obj.find(number);
  */
