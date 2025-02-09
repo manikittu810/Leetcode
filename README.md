@@ -282,6 +282,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/manikittu810/Leetcode/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2412-minimum-amount-of-time-to-fill-cups](https://github.com/manikittu810/Leetcode/tree/master/2412-minimum-amount-of-time-to-fill-cups) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/manikittu810/Leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
+| [2448-count-number-of-bad-pairs](https://github.com/manikittu810/Leetcode/tree/master/2448-count-number-of-bad-pairs) |
 | [2488-divide-intervals-into-minimum-number-of-groups](https://github.com/manikittu810/Leetcode/tree/master/2488-divide-intervals-into-minimum-number-of-groups) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/manikittu810/Leetcode/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2585-delete-greatest-value-in-each-row](https://github.com/manikittu810/Leetcode/tree/master/2585-delete-greatest-value-in-each-row) |
@@ -323,6 +324,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/manikittu810/Leetcode/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
 | [2434-design-a-number-container-system](https://github.com/manikittu810/Leetcode/tree/master/2434-design-a-number-container-system) |
 | [2436-make-array-zero-by-subtracting-equal-amounts](https://github.com/manikittu810/Leetcode/tree/master/2436-make-array-zero-by-subtracting-equal-amounts) |
+| [2448-count-number-of-bad-pairs](https://github.com/manikittu810/Leetcode/tree/master/2448-count-number-of-bad-pairs) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/manikittu810/Leetcode/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/manikittu810/Leetcode/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 ## Divide and Conquer
@@ -389,6 +391,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1364-tuple-with-same-product](https://github.com/manikittu810/Leetcode/tree/master/1364-tuple-with-same-product) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/manikittu810/Leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/manikittu810/Leetcode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
+| [2448-count-number-of-bad-pairs](https://github.com/manikittu810/Leetcode/tree/master/2448-count-number-of-bad-pairs) |
 ## Quickselect
 |  |
 | ------- |
@@ -402,6 +405,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/manikittu810/Leetcode/tree/master/0070-climbing-stairs) |
 | [0795-k-th-symbol-in-grammar](https://github.com/manikittu810/Leetcode/tree/master/0795-k-th-symbol-in-grammar) |
 | [1013-fibonacci-number](https://github.com/manikittu810/Leetcode/tree/master/1013-fibonacci-number) |
+| [2448-count-number-of-bad-pairs](https://github.com/manikittu810/Leetcode/tree/master/2448-count-number-of-bad-pairs) |
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/manikittu810/Leetcode/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 ## Sliding Window
 |  |
