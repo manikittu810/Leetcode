@@ -1,8 +1,8 @@
 class Solution {
     public String removeOccurrences(String s, String part) {
         while(s.contains(part)){
-            int firstOccurenceStartIndex = s.indexOf(part);//2
-            s = s.substring(0,firstOccurenceStartIndex) + s.substring(firstOccurenceStartIndex+part.length());
+            int firstOccurence = s.indexOf(part);
+            s = s.substring(0,firstOccurence) + s.substring(firstOccurence+part.length());
         }
         return s;
     }
