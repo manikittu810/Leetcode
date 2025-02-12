@@ -8,9 +8,6 @@ class Solution {
             a[k--] = b[r--];
         }
        }
-       while(l>=0 && k>=0){
-        a[k--]=a[l--];
-       }
        while(r>=0 && k>=0){
         a[k--]=b[r--];
        }
