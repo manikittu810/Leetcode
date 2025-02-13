@@ -1,10 +1,9 @@
 class Solution {
     public int minOperations(int[] a, int k) {
         //active learning
-        PriorityQueue<Long> minHeap = new PriorityQueue<>();
-        for(long i : a){
-            minHeap.offer(i);
-        }
+        PriorityQueue<Long> minHeap = new PriorityQueue<>(
+            Arrays.stream(a).mapToLong(x->(long)x).boxed().collect(Collectors.toList())
+        );
         int count = 0;
         while(minHeap.size()>1 && minHeap.peek()<k){
             long x = minHeap.poll();
