@@ -6,11 +6,12 @@ class Solution {
         }
         int count = 0;
         while(minHeap.size()>1 && minHeap.peek()<k){
-            long x = minHeap.poll();
-            long y = minHeap.poll();
+            long x=minHeap.poll();
+            long y=minHeap.poll();
             minHeap.offer((x*2)+y);
             count++;
         }
         return count;
-}
+        
+    }
 }
