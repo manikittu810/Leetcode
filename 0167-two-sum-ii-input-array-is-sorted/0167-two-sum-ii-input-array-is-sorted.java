@@ -26,3 +26,4 @@ class Solution {
     }
 }
 //sc : o(1)
+//TC : O(n log n)
