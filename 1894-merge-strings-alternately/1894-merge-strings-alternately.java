@@ -1,22 +1,20 @@
 class Solution {
-    public String mergeAlternately(String s1, String s2) {
-        int n = s1.length();
-        int m = s2.length();
-        char []ch1 = s1.toCharArray();
-        char []ch2 = s2.toCharArray();
-
+    public String mergeAlternately(String word1, String word2) {
+        char[] ch1 = word1.toCharArray();
+        char[]ch2 = word2.toCharArray();
         StringBuilder sb = new StringBuilder();
-        int l=0, r= 0;
-        while(l<n && r<m){
-            sb.append(ch1[l++]);
-            sb.append(ch2[r++]);
+
+        int m= ch1.length,n = ch2.length,i=0,j=0;
+        while(i<m && j<n){
+            sb.append(ch1[i++]);
+            sb.append(ch2[j++]);
         }
-        while(l<n){
-            sb.append(ch1[l++]);
+        while(i<m){
+            sb.append(ch1[i++]);
         }
-        while(r<m){
-            sb.append(ch2[r++]);
+        while(j<n){
+            sb.append(ch2[j++]);
         }
-        return sb.toString();
+    return sb.toString();
     }
 }
