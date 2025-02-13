@@ -1,15 +1,18 @@
 class Solution {
     public void merge(int[] a, int m, int[] b, int n) {
-       int l=m-1,r=n-1,k=m+n-1;
-       while(l>=0 && r>=0 && k>=0){
-        if(a[l]>=b[r]){
-            a[k--]=a[l--];
-        }else{
-            a[k--] = b[r--];
+        int i=m-1,j=n-1,k=m+n-1;
+        while(i>=0 && j>=0 && k>=0){
+            if(a[i]>=b[j]){
+                a[k--] = a[i--];
+            }else{
+                a[k--] = b[j--];
+            }
         }
-       }
-       while(r>=0 && k>=0){
-        a[k--]=b[r--];
-       }
+        while(i>=0){
+            a[k--] = a[i--];
+        }
+        while(j>=0){
+            a[k--] = b[j--];
+        }
     }
 }
