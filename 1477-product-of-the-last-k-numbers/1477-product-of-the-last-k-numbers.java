@@ -19,7 +19,7 @@ class ProductOfNumbers {
         if(k>=list.size()){
             return 0;
         }else{
-            return list.get(list.size()-1)/list.get(list.size()-k-1);
+            return list.get(list.size()-1)/list.get(list.size()-1-k);
         }
     }
 }
