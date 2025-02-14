@@ -1,25 +1,27 @@
 class ProductOfNumbers {
-    private  List<Integer> list;
+    private  List<Integer> prefixProductCache;
 
     public ProductOfNumbers() {
-        list = new ArrayList<>();
-        list.add(1);
+        prefixProductCache = new ArrayList<>();
+        prefixProductCache.add(1);
     }
     
     public void add(int num) {
         if(num==0){
-            list = new ArrayList<>();
-            list.add(1);
+            prefixProductCache = new ArrayList<>();
+            prefixProductCache.add(1);
         }else{
-            list.add(list.get(list.size()-1) * num);
+            int lastCacheValue = prefixProductCache.get(prefixProductCache.size()-1);
+            prefixProductCache.add(lastCacheValue * num);
         }
     }
     
     public int getProduct(int k) {
-        if(k>=list.size()){
+        int n = prefixProductCache.size();
+        if(k>=prefixProductCache.size()){
             return 0;
         }else{
-            return list.get(list.size()-1)/list.get(list.size()-1-k);
+            return prefixProductCache.get(n-1)/prefixProductCache.get(n-1-k);
         }
     }
 }
