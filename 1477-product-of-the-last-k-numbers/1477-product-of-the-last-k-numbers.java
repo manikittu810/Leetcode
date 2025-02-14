@@ -13,17 +13,10 @@ class ProductOfNumbers {
     public int getProduct(int k) {
         int n = list.size();
         int res = 1;
-        // if(k<=list.size()){
-            for(int i=n-1;i>=n-k;i--){
-                // if(list.get(i)==0){
-                //     return 0;
-                // }else{
+            for(int i=n-1;i>=n-k;i--){ //O(K)
                     res*=list.get(i);
-                // }
-            // }
         }
-return res;
-        
+        return res;   
     }
 }
 
