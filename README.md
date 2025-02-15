@@ -243,6 +243,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/manikittu810/Leetcode/tree/master/0042-trapping-rain-water) |
 | [0049-group-anagrams](https://github.com/manikittu810/Leetcode/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/manikittu810/Leetcode/tree/master/0053-maximum-subarray) |
+| [0075-sort-colors](https://github.com/manikittu810/Leetcode/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/manikittu810/Leetcode/tree/master/0078-subsets) |
 | [0088-merge-sorted-array](https://github.com/manikittu810/Leetcode/tree/master/0088-merge-sorted-array) |
 | [0090-subsets-ii](https://github.com/manikittu810/Leetcode/tree/master/0090-subsets-ii) |
@@ -353,6 +354,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0015-3sum](https://github.com/manikittu810/Leetcode/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/manikittu810/Leetcode/tree/master/0049-group-anagrams) |
+| [0075-sort-colors](https://github.com/manikittu810/Leetcode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/manikittu810/Leetcode/tree/master/0088-merge-sorted-array) |
 | [0217-contains-duplicate](https://github.com/manikittu810/Leetcode/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/manikittu810/Leetcode/tree/master/0242-valid-anagram) |
@@ -628,6 +630,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0019-remove-nth-node-from-end-of-list](https://github.com/manikittu810/Leetcode/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0026-remove-duplicates-from-sorted-array](https://github.com/manikittu810/Leetcode/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [0042-trapping-rain-water](https://github.com/manikittu810/Leetcode/tree/master/0042-trapping-rain-water) |
+| [0075-sort-colors](https://github.com/manikittu810/Leetcode/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/manikittu810/Leetcode/tree/master/0088-merge-sorted-array) |
 | [0125-valid-palindrome](https://github.com/manikittu810/Leetcode/tree/master/0125-valid-palindrome) |
 | [0141-linked-list-cycle](https://github.com/manikittu810/Leetcode/tree/master/0141-linked-list-cycle) |
