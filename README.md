@@ -252,6 +252,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0130-surrounded-regions](https://github.com/manikittu810/Leetcode/tree/master/0130-surrounded-regions) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/manikittu810/Leetcode/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/manikittu810/Leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0189-rotate-array](https://github.com/manikittu810/Leetcode/tree/master/0189-rotate-array) |
 | [0200-number-of-islands](https://github.com/manikittu810/Leetcode/tree/master/0200-number-of-islands) |
 | [0217-contains-duplicate](https://github.com/manikittu810/Leetcode/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/manikittu810/Leetcode/tree/master/0238-product-of-array-except-self) |
@@ -418,6 +419,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0013-roman-to-integer](https://github.com/manikittu810/Leetcode/tree/master/0013-roman-to-integer) |
 | [0062-unique-paths](https://github.com/manikittu810/Leetcode/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/manikittu810/Leetcode/tree/master/0070-climbing-stairs) |
+| [0189-rotate-array](https://github.com/manikittu810/Leetcode/tree/master/0189-rotate-array) |
 | [0795-k-th-symbol-in-grammar](https://github.com/manikittu810/Leetcode/tree/master/0795-k-th-symbol-in-grammar) |
 | [1013-fibonacci-number](https://github.com/manikittu810/Leetcode/tree/master/1013-fibonacci-number) |
 | [1477-product-of-the-last-k-numbers](https://github.com/manikittu810/Leetcode/tree/master/1477-product-of-the-last-k-numbers) |
@@ -632,6 +634,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0143-reorder-list](https://github.com/manikittu810/Leetcode/tree/master/0143-reorder-list) |
 | [0160-intersection-of-two-linked-lists](https://github.com/manikittu810/Leetcode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/manikittu810/Leetcode/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0189-rotate-array](https://github.com/manikittu810/Leetcode/tree/master/0189-rotate-array) |
 | [0234-palindrome-linked-list](https://github.com/manikittu810/Leetcode/tree/master/0234-palindrome-linked-list) |
 | [0287-find-the-duplicate-number](https://github.com/manikittu810/Leetcode/tree/master/0287-find-the-duplicate-number) |
 | [0344-reverse-string](https://github.com/manikittu810/Leetcode/tree/master/0344-reverse-string) |
