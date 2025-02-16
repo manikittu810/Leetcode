@@ -285,6 +285,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1574-maximum-product-of-two-elements-in-an-array](https://github.com/manikittu810/Leetcode/tree/master/1574-maximum-product-of-two-elements-in-an-array) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/manikittu810/Leetcode/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1694-make-sum-divisible-by-p](https://github.com/manikittu810/Leetcode/tree/master/1694-make-sum-divisible-by-p) |
+| [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/manikittu810/Leetcode/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/manikittu810/Leetcode/tree/master/1878-check-if-array-is-sorted-and-rotated) |
 | [1927-maximum-ascending-subarray-sum](https://github.com/manikittu810/Leetcode/tree/master/1927-maximum-ascending-subarray-sum) |
 | [2038-nearest-exit-from-entrance-in-maze](https://github.com/manikittu810/Leetcode/tree/master/2038-nearest-exit-from-entrance-in-maze) |
@@ -700,6 +701,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0257-binary-tree-paths](https://github.com/manikittu810/Leetcode/tree/master/0257-binary-tree-paths) |
 | [0494-target-sum](https://github.com/manikittu810/Leetcode/tree/master/0494-target-sum) |
 | [0800-letter-case-permutation](https://github.com/manikittu810/Leetcode/tree/master/0800-letter-case-permutation) |
+| [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/manikittu810/Leetcode/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/manikittu810/Leetcode/tree/master/2802-find-the-punishment-number-of-an-integer) |
 ## String Matching
 |  |
