@@ -1,42 +1,54 @@
+
 class Solution {
     public int[] constructDistancedSequence(int n) {
-        int[] res = new int[2 * n - 1];  // Result array of size (2*n - 1)
-        boolean[] used = new boolean[n + 1];  // Track used numbers
-        
-        backtrack(res, used, n, 0);  // Start backtracking
-        return res;
+
+		int len = 2*n-1;
+
+		int []res = new int[len];
+
+		boolean [] placed = new boolean[n+1];
+
+		backTrack(res,placed,n,0);
+
+		return res;
+
     }
 
-    private boolean backtrack(int[] res, boolean[] used, int n, int index) {
-        if (index == res.length) {
-            return true;
-        }
+	private boolean  backTrack(int[] res, boolean[] placed, int n, int idx){
 
-        if (res[index] != 0) {
-            return backtrack(res, used, n, index + 1);
-        }
+			if(idx == res.length){
 
+					return true;
+			}
 
-        for (int num = n; num >= 1; num--) {
-            if (!used[num]) {
-                int secondIdx = (num == 1) ? index : index + num;
+			if(res[idx]!=0){
+				return backTrack(res,placed, n,idx+1);
+			}
 
-                if (secondIdx < res.length && res[secondIdx] == 0) {
-                    res[index] = num;
-                    res[secondIdx] = num;
-                    used[num] = true;
+			for(int curNum = n;curNum>=1;curNum--){
 
-                    if (backtrack(res, used, n, index + 1)) {
-                        return true;
-                    }
+				if(!placed[curNum]){
+	
+					int secondIdx = (curNum==1) ? idx : idx+curNum;
 
-                    res[index] = 0;
-                    res[secondIdx] = 0;
-                    used[num] = false;
-                }
-            }
-        }
+					if(secondIdx <res.length && res[secondIdx]==0){
+						res[idx] = curNum;
+						res[secondIdx] = curNum;
+						placed[curNum] = true;
 
-        return false;  
-    }
+						if(backTrack(res,placed,n,idx+1)){
+							return true;
+						}
+
+						res[idx] = 0;
+						res[secondIdx] = 0;
+						placed[curNum] = false;
+					}
+				}
+                	
+			}
+
+		return false;
+
+	}
 }
