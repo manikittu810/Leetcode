@@ -6,16 +6,16 @@ class Solution {
         }
         return getTotalCount(count);
     }
-    private int getTotalCount(int[] count){
+    private int getTotalCount(int []count){
         int totalCount = 0;
         for(int i=0;i<count.length;i++){
             if(count[i]!=0){
-                totalCount ++;
-                count[i]--;
-                totalCount+=getTotalCount(count); 
-                count[i]++;
-
+            totalCount++;
+            count[i]--;
+            totalCount += getTotalCount(count);
+            count[i]++;
             }
+            
         }
         return totalCount;
     }
