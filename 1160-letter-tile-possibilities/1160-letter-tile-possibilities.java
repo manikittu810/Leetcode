@@ -1,23 +1,22 @@
 class Solution {
     public int numTilePossibilities(String s) {
-        Set<String> set = new HashSet<>();
-        boolean []tracker = new boolean[s.length()];
-        backTrack(s,new StringBuilder(),tracker,set);
-        return set.size();
-    }
-    private void backTrack(String s, StringBuilder sb, boolean[] tracker, Set<String> set){
-        if(sb.length()>0){
-            set.add(sb.toString());
+        int[] count = new int[26];
+        for(Character c : s.toCharArray()){
+            count[c-'A']++;
         }
+        return getTotalCount(count);
+    }
+    private int getTotalCount(int[] count){
+        int totalCount = 0;
+        for(int i=0;i<count.length;i++){
+            if(count[i]!=0){
+                totalCount ++;
+                count[i]--;
+                totalCount+=getTotalCount(count); 
+                count[i]++;
 
-        for(int i=0;i<s.length();i++){
-            if(!tracker[i]){
-                tracker[i] = true;
-                sb.append(s.charAt(i));
-                backTrack(s,sb,tracker,set);
-                tracker[i] = false;
-                sb.deleteCharAt(sb.length()-1);
             }
         }
+        return totalCount;
     }
 }
