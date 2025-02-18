@@ -5,17 +5,17 @@ class Solution {
         backTrack(s,new StringBuilder(),tracker,set);
         return set.size();
     }
-    private void backTrack(String s, StringBuilder sb, boolean[] track, Set<String> set){
-        if(sb.length()>0){//"" escapes this substring
+    private void backTrack(String s, StringBuilder sb, boolean[] tracker, Set<String> set){
+        if(sb.length()>0){
             set.add(sb.toString());
-            // return ;
         }
+
         for(int i=0;i<s.length();i++){
-            if(!track[i]){
-                track[i] = true;
+            if(!tracker[i]){
+                tracker[i] = true;
                 sb.append(s.charAt(i));
-                backTrack(s,sb,track,set);
-                track[i] = false;
+                backTrack(s,sb,tracker,set);
+                tracker[i] = false;
                 sb.deleteCharAt(sb.length()-1);
             }
         }
