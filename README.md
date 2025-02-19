@@ -221,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0889-buddy-strings](https://github.com/manikittu810/Leetcode/tree/master/0889-buddy-strings) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/manikittu810/Leetcode/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1160-letter-tile-possibilities](https://github.com/manikittu810/Leetcode/tree/master/1160-letter-tile-possibilities) |
+| [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/manikittu810/Leetcode/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1894-merge-strings-alternately](https://github.com/manikittu810/Leetcode/tree/master/1894-merge-strings-alternately) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/manikittu810/Leetcode/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/manikittu810/Leetcode/tree/master/2021-remove-all-occurrences-of-a-substring) |
@@ -707,6 +708,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0494-target-sum](https://github.com/manikittu810/Leetcode/tree/master/0494-target-sum) |
 | [0800-letter-case-permutation](https://github.com/manikittu810/Leetcode/tree/master/0800-letter-case-permutation) |
 | [1160-letter-tile-possibilities](https://github.com/manikittu810/Leetcode/tree/master/1160-letter-tile-possibilities) |
+| [1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/manikittu810/Leetcode/tree/master/1516-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n) |
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/manikittu810/Leetcode/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [2456-construct-smallest-number-from-di-string](https://github.com/manikittu810/Leetcode/tree/master/2456-construct-smallest-number-from-di-string) |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/manikittu810/Leetcode/tree/master/2802-find-the-punishment-number-of-an-integer) |
