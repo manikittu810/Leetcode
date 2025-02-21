@@ -20,21 +20,21 @@ class FindElements {
     public FindElements(TreeNode root) {
         this.root = root;
         this.set = new HashSet<>();
-        dfs(root,0);
+        constructTree(root,0);
     }
-    public void dfs(TreeNode root, int value){
-        if(root == null){
+    public void constructTree(TreeNode root,int value){
+        if(root== null){
             return ;
         }
         root.val = value;
         set.add(value);
-        dfs(root.left,2*value+1);
-        dfs(root.right, 2*value+2);
-
+        constructTree(root.left,2*value+1);
+        constructTree(root.right,2*value+2);
     }
     
     public boolean find(int target) {
         return set.contains(target);
+        
     }
 }
 
