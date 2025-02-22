@@ -23,17 +23,17 @@ class Solution {
                 index++;
                 depth++;
             }
-            int val =0;
-            while(index < s.length() && Character.isDigit(s.charAt(index))){
-                val = val *10 + (s.charAt(index)-'0');
+            int val = 0;
+            while(index<s.length() && Character.isDigit(s.charAt(index))){
+                val = val*10 + (s.charAt(index)-'0');
                 index++;
             }
-
             TreeNode node = new TreeNode(val);
 
             while(st.size()>depth){
                 st.pop();
             }
+
             if(!st.isEmpty()){
                 if(st.peek().left == null){
                     st.peek().left = node;
@@ -41,12 +41,13 @@ class Solution {
                     st.peek().right = node;
                 }
             }
+
             st.push(node);
+
         }
         while(st.size()>1){
             st.pop();
         }
         return st.peek();
-        
     }
 }
