@@ -17,20 +17,20 @@ class Solution {
     public TreeNode recoverFromPreorder(String s) {
         Stack<TreeNode> st = new Stack<>();
         int index = 0;
-        while(index < s.length()){
+        while(index<s.length()){
             int depth = 0;
-            while(index<s.length() && s.charAt(index)=='-'){
+            while(index<s.length() && s.charAt(index) == '-'){
                 index++;
                 depth++;
             }
             int val = 0;
-            while(index<s.length() && Character.isDigit(s.charAt(index))){
+            while(index < s.length() && Character.isDigit(s.charAt(index))){
                 val = val*10 + (s.charAt(index)-'0');
                 index++;
             }
-            TreeNode node = new TreeNode(val);
+            TreeNode node=new TreeNode(val);
 
-            while(st.size()>depth){
+            while(st.size()> depth){
                 st.pop();
             }
 
@@ -43,7 +43,6 @@ class Solution {
             }
 
             st.push(node);
-
         }
         while(st.size()>1){
             st.pop();
