@@ -1,49 +1,51 @@
 class Solution {
-    public boolean isValidSudoku(char[][] a) {
-        for(int i =0;i<9;i++){
-            Set<Character> rSet = new HashSet<>();
-            for(int j =0;j<9;j++){
-                if(a[i][j]=='.') continue;
-                if(!rSet.contains(a[i][j])){
-                    rSet.add(a[i][j]);
-                }else{
-                    return false;
-                }
-            }
-        }
-
-
+    public boolean isValidSudoku(char[][] grid) {
+        
         for(int i=0;i<9;i++){
-            Set<Character> cSet = new HashSet<>();
+            Set<Character> set = new HashSet<>();
             for(int j=0;j<9;j++){
-                if(a[j][i] == '.') continue;
-                if(!cSet.contains(a[j][i])){
-                    cSet.add(a[j][i]);
-                }else {
+                if(grid[i][j] == '.') continue;
+                if(set.contains(grid[i][j])){ 
                     return false;
+                }else{
+                    set.add(grid[i][j]);
                 }
             }
         }
 
-        for(int smallGrids = 0;smallGrids<3;smallGrids++){
-            Set<Character> smallGrid = new HashSet<>();
-            int i =(smallGrids/3)*3;
-            int j = (smallGrids%3)*3;
-            for(int r =0;r<3;r++){
-                for(int c=0;c<3;c++){
-                    int r1 = i+r;
-                    int c1 = j+c;
-                    if(a[r1][c1]=='.'){
+        for(int j=0;j<9;j++){
+            Set<Character> set = new HashSet<>();
+            for(int i=0;i<9;i++){
+                if(grid[i][j] == '.') continue;
+                if(set.contains(grid[i][j])){ 
+                    return false;
+                }else{
+                    set.add(grid[i][j]);
+                }
+            }
+        }
+
+        for(int smallGrid = 0;smallGrid < 9 ;smallGrid++){
+            Set<Character> smallGridSet = new HashSet<>();
+            int i = (smallGrid/3)*3;
+            int j =(smallGrid%3)*3;
+            for(int row=0;row<3;row++){
+                for(int col=0;col<3;col++){
+                    int newRow = i+row;
+                    int newCol = j+col;
+                    if(grid[newRow][newCol] == '.') {
                         continue;
                     }
-                    if(!smallGrid.contains(a[r1][c1])){
-                        smallGrid.add(a[r1][c1]);
-                    }else{
+                    if(smallGridSet.contains(grid[newRow][newCol])) {
                         return false;
+                    }else{
+                        smallGridSet.add(grid[newRow][newCol]);
                     }
+
                 }
             }
         }
-        return true;
+    return true;
+
     }
 }
