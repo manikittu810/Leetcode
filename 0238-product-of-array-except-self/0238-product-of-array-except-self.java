@@ -7,11 +7,10 @@ class Solution {
         }
 
         int suffix = 1;
-        int[]ans = new int[nums.length];
         for(int i = prefix.length-1;i>=0;i--){
-            ans[i] = prefix[i] * suffix;
+            prefix[i] = prefix[i] * suffix;
             suffix = suffix*nums[i];
         } 
-        return ans;
+        return prefix;
     }
 }
