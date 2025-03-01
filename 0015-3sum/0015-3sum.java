@@ -17,11 +17,7 @@ class Solution{
     while(l<r && a[l]==a[l+1]) l++;
     while(l<r && a[r]==a[r-1]) r--;
     l++; r--;
-   }else if(sum<0){
-    l++;
-    }else{
-        r--;
-        }
+   }else if(sum<0){l++;}else{r--;}
   }
  }
 }
