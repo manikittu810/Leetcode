@@ -1,15 +1,16 @@
 class Solution {
     public int maxProfit(int[] a) {
-        int maxProfit =0;
-        int l=0,r=0;
-        while(r< a.length){
-           if(a[l]>a[r]){
-            l=r;
-           }
-           else{
-            maxProfit=Math.max(maxProfit,a[r]-a[l]);
-           }
-           r++;
+        if(a.length == 0 || a.length == 1){
+            return 0;
+        }
+        int minPrice=a[0],maxProfit = 0;
+        for(int r = 1;r<a.length;r++){
+            if(a[r]>minPrice){
+                maxProfit = Math.max(maxProfit, a[r]-minPrice);
+            }else{
+                minPrice=a[r];
+            }
+            
         }
         return maxProfit;
     }
