@@ -3,15 +3,16 @@ class Solution {
         if(prices.length == 0 || prices.length==1){
             return 0;
         }
-        int minPrice = prices[0],maxPrice = 0;
-
-        for(int r=1;r<prices.length;r++){
-            if(prices[r] > minPrice){
-                maxPrice = Math.max(maxPrice, prices[r]-minPrice);
+        int l=0,r=1,maxProfit = 0;
+        while(r<prices.length){
+            if(prices[l]<prices[r]){
+                maxProfit = Math.max(maxProfit, prices[r] - prices[l]);
+                r++;
             }else{
-                minPrice = prices[r];
+                l=r;
+                r++;
             }
         }
-        return maxPrice;
+        return maxProfit;
     }
 }
