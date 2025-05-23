@@ -12,9 +12,6 @@ class Solution {
         while(sptr!=fptr){
             sptr = nums[sptr];
             fptr = nums[fptr];
-            if(sptr == fptr){
-                break;
-            }
         }
 return sptr;
         
