@@ -32,13 +32,11 @@ class Solution {
 
         while(firstHalf!=null && secondHalf!=null){
             ListNode temp = firstHalf.next;
-            // ListNode temp2 = secondHalf.next;
             firstHalf.next = secondHalf;
             firstHalf = firstHalf.next;
             secondHalf = secondHalf.next;
             firstHalf.next = temp;
             firstHalf = firstHalf.next;
-            // secondHalf = temp2;
         }
     }
 
