@@ -1,43 +1,52 @@
 class Solution {
     public int numIslands(char[][] grid) {
-        int row=grid.length;
-        int col = grid[0].length;
-        boolean[][] visited = new boolean[row][col];
-        Queue<int[]> q = new LinkedList<>();
+
+        int r = grid.length;
+        int c = grid[0].length;
+
+        boolean [][]visited = new boolean[r][c];
+
+        Queue<int[]> queue = new LinkedList<>();
+
+        int[][]directions = {{1,0},{-1,0},{0,1},{0,-1}};
+
         int count = 0;
-         int[][]directions = {
-            {1,0},{0,1},{0,-1},{-1,0}
-        };
-        for(int i=0;i<row;i++){
-            for(int j=0;j<col;j++){
-                if(grid[i][j]== '1' && !visited[i][j]){
-                    visited[i][j]=true;
-                    q.offer(new int[]{i,j});
+
+
+        for(int i=0;i<r;i++){
+            for(int j=0;j<c;j++){
+
+                if(grid[i][j] == '1' && !visited[i][j]){
+
+                    visited[i][j] = true;
+
+                    queue.offer(new int[]{i,j});
+
                     count++;
-            
-        while(!q.isEmpty()){
-            int n = q.size();
-            for(int k=0;k<n;k++){
-                int []u = q.poll();
-                int s =u[0];
-                int m =u[1];
-                for(int []dist : directions){
-                    int newRow = s+dist[0]; 
-                    int newCol = m+dist[1];
-                    if(
-                    newRow>=0 && newCol>=0 && newRow<row && newCol<col &&
-                    grid[newRow][newCol]=='1' &&
-                    !visited[newRow][newCol] 
-                    ){
-                        visited[newRow][newCol] = true;
-                        q.offer(new int[]{newRow,newCol});
+
+                        while(!queue.isEmpty()){
+
+
+                        int []u = queue.poll();
+
+                        for(int []direction : directions){
+
+                            int newRow = direction[0]+u[0];
+                            int newCol = direction[1]+u[1];
+
+                            if(newRow>=0 && newRow<r 
+                            && newCol>=0 && newCol<c
+                            && !visited[newRow][newCol] && grid[newRow][newCol] == '1'){
+
+                                visited[newRow][newCol] = true;
+                                queue.offer(new int[]{newRow,newCol});
+
+                            }
+                        }
                     }
                 }
             }
         }
-                }
-            }
-        }
-return count;
+        return count;   
     }
 }
