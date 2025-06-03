@@ -20,7 +20,9 @@ class Node {
 
 class Solution {
     public Node cloneGraph(Node node) {
-        if(node ==null){return null;}
+        if(node == null){
+            return null;
+        }
 
         Map<Node,Node> map = new HashMap<>();
         Node firstClonedNode = new Node(node.val,new ArrayList<>());
