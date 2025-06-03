@@ -25,21 +25,19 @@ class Solution {
         }
 
         Map<Node,Node> map = new HashMap<>();
-        Node firstClonedNode = new Node(node.val,new ArrayList<>());
-        map.put(node,firstClonedNode);
+        map.put(node,new Node(node.val));
         Queue<Node> q = new LinkedList<>();
         q.offer(node);
         while(!q.isEmpty()){
             Node originalNode = q.poll();
             for(Node u : originalNode.neighbors){
                 if(!map.containsKey(u)){
-                    Node copyOfU = new Node(u.val, new ArrayList<>());
-                    map.put(u,copyOfU);
+                map.put(u,new Node(u.val));
                     q.offer(u);
                 }
                 map.get(originalNode).neighbors.add(map.get(u));
             }
         }
-        return firstClonedNode;
+        return map.get(node);
     }
 }
