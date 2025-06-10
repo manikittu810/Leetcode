@@ -1,47 +1,62 @@
 class Solution {
-    public void solve(char[][] grid) {
-        int row = grid.length;
-        int col = grid[0].length;
-        int[][]directions = {
-            {1,0},{-1,0},{0,1},{0,-1}
-        };
-//step1 : 
-        for(int i=0;i<row;i++){
-            if(grid[i][0]=='O'){
-                dfs(grid,i,0);
-            }
-            if(grid[i][col-1]=='O'){
-                dfs(grid,i,col-1);
-            }
+    private int[][] directions = {{1,0},{-1,0},{0,1},{0,-1}};
+    public void solve(char[][] board) {
+        if(board.length == 1){
+            return ;
         }
+        int r= board.length;
+        int c = board[0].length;
 
-        for(int j=0;j<col;j++){
-            if(grid[0][j]=='O'){
-                dfs(grid,0,j);
+        Queue<int[]> q = new LinkedList<>();
+
+        for(int i=0;i<r;i++){
+            if(board[i][0] == 'O'){
+                board[i][0] = 'M';
+                q.offer(new int[]{i,0});
             }
-            if(grid[row-1][j]=='O'){
-                dfs(grid,row-1,j);
-            }
-        }
-        //step2:
-        for(int i=0;i<row;i++){
-            for(int j=0;j<col;j++){
-                if(grid[i][j] == '#'){
-                    grid[i][j] = 'O';
-                }else{
-                    grid[i][j] = 'X';
-                }
+            if(board[i][c-1] == 'O'){
+                board[i][c-1] = 'M';
+                q.offer(new int[]{i,c-1});
             }
         }
-    }
-    private void dfs(char[][]grid,int i,int j){
-       if(i<0 || j<0 ||i>=grid.length ||j>=grid[0].length || grid[i][j]!='O'){
-        return;
-       }
-    grid[i][j] = '#';
-    dfs(grid,i+1,j);
-    dfs(grid,i-1,j);
-    dfs(grid,i,j+1);
-    dfs(grid,i,j-1);
-    }
-}
+        for(int j=0;j<c;j++){
+            if(board[r-1][j] == 'O'){
+                board[r-1][j] = 'M';
+                q.offer(new int[]{r-1,j});
+            }
+            if(board[0][j] == 'O'){
+                board[0][j] = 'M';
+                q.offer(new int[]{0,j});
+            }
+        }
+        
+                    while(!q.isEmpty()){
+                        int []u = q.poll();
+                        for(int []dir : directions){
+                            int newRow = dir[0]+u[0];
+                            int newCol = dir[1] + u[1];
+                            if(newRow>=0 && newRow<r && newCol>=0 && newCol<c && 
+                            board[newRow][newCol]=='O'){
+                                board[newRow][newCol] = 'M'; 
+                                q.offer(new int[]{newRow,newCol});
+                            }
+                        }
+                    }
+                    for(int i=0;i<r;i++){
+                        for(int j=0;j<c;j++){
+                            if(board[i][j] == 'O'){
+                                board[i][j] = 'X';
+                            }
+                            
+                        }
+                    }
+                       for(int i=0;i<r;i++){
+                        for(int j=0;j<c;j++){
+                            if(board[i][j] == 'M'){
+                                board[i][j] = 'O';
+                            }
+                            
+                        }
+                    }
+                    }
+                    }
