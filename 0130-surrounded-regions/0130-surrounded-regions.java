@@ -1,15 +1,38 @@
 class Solution {
     private int[][] directions = {{1,0},{-1,0},{0,1},{0,-1}};
     public void solve(char[][] board) {
-        if(board.length == 1){
-            return ;
-        }
-        int r= board.length;
+        if (board == null || board.length == 0 || board[0].length == 0) return;
+
+        int r = board.length;
         int c = board[0].length;
 
-        Queue<int[]> q = new LinkedList<>();
-
-        for(int i=0;i<r;i++){
+        Queue<int[]> q = new ArrayDeque<>();
+        markAndEnqueue(board,r,c,q);
+                    while(!q.isEmpty()){
+                        int []u = q.poll();
+                        for(int []dir : directions){
+                            int newRow = dir[0]+u[0];
+                            int newCol = dir[1] + u[1];
+                            if(newRow>=0 && newRow<r && newCol>=0 && newCol<c && 
+                            board[newRow][newCol]=='O'){
+                                board[newRow][newCol] = 'M'; 
+                                q.offer(new int[]{newRow,newCol});
+                            }
+                        }
+                    }
+                    for(int i=0;i<r;i++){
+                        for(int j=0;j<c;j++){
+                            if(board[i][j] == 'O'){
+                                board[i][j] = 'X';
+                            }else if(board[i][j] == 'M'){
+                                board[i][j] = 'O';
+                        }
+                        }
+                    }
+                            
+            }
+    private void markAndEnqueue(char[][] board, int r, int c, Queue<int[]> q){
+        for(int i=0;i<r;i++){   
             if(board[i][0] == 'O'){
                 board[i][0] = 'M';
                 q.offer(new int[]{i,0});
@@ -29,34 +52,6 @@ class Solution {
                 q.offer(new int[]{0,j});
             }
         }
-        
-                    while(!q.isEmpty()){
-                        int []u = q.poll();
-                        for(int []dir : directions){
-                            int newRow = dir[0]+u[0];
-                            int newCol = dir[1] + u[1];
-                            if(newRow>=0 && newRow<r && newCol>=0 && newCol<c && 
-                            board[newRow][newCol]=='O'){
-                                board[newRow][newCol] = 'M'; 
-                                q.offer(new int[]{newRow,newCol});
-                            }
-                        }
-                    }
-                    for(int i=0;i<r;i++){
-                        for(int j=0;j<c;j++){
-                            if(board[i][j] == 'O'){
-                                board[i][j] = 'X';
-                            }
-                            
-                        }
-                    }
-                       for(int i=0;i<r;i++){
-                        for(int j=0;j<c;j++){
-                            if(board[i][j] == 'M'){
-                                board[i][j] = 'O';
-                            }
-                            
-                        }
-                    }
-                    }
-                    }
+    }
+
+}
