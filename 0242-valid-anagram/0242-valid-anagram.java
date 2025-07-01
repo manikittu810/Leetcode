@@ -3,8 +3,7 @@ class Solution {
         if(s.length()!=t.length()){
             return false;
         }
-        Map<Character,Integer> map = new HashMap<>();
-        int []count = new int[26];
+        int[]count = new int[26];
         for(int i=0;i<s.length();i++){
             count[s.charAt(i)-'a']++;
         }
@@ -15,5 +14,6 @@ class Solution {
             }
         }
         return true;
+        
     }
 }
