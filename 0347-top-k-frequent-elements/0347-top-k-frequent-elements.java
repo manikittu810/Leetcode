@@ -1,44 +1,23 @@
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
-        PriorityQueue<Pair<Integer,Integer>> pq = new PriorityQueue<>((b,c) ->{
-        if(b.getFirst().equals(c.getFirst())){
-                return b.getSecond() - c.getSecond();
-        }
-        return b.getFirst() - c.getFirst();
-
-        });
-
         Map<Integer,Integer> map = new HashMap<>();
+        Queue<Integer> minHeap = new PriorityQueue<>(
+            (a,b) -> map.get(a) - map.get(b));
+        
         for(int i=0;i<nums.length;i++){
-                map.put(nums[i],map.getOrDefault(nums[i],0)+1);
+            map.put(nums[i], map.getOrDefault(nums[i],0)+1);
         }
-        for(Map.Entry<Integer,Integer>entry : map.entrySet()){
-                int key = entry.getKey();
-                int val = entry.getValue();
-                pq.offer(new Pair<>(val,key));
-                while(pq.size()>k){
-                        pq.poll();
-                }
+
+        for(int i : map.keySet()){
+            minHeap.offer(i);
+            if(minHeap.size()>k){
+                minHeap.poll();
+            }
         }
-        int []res = new int[k];
-        int idx = 0;
-        while(pq.size()>0){
-        int n= pq.poll().getSecond();
-        res[idx++] = n;
+        int[]a= new int[k];int idx=0;
+        while(!minHeap.isEmpty()){
+            a[idx++] = minHeap.poll();
         }
-        return res;
+        return a;
     }
-}
-class Pair<U extends Comparable<U>,V extends Comparable<V>> implements  Comparable<Pair<U,V>>{
-        private U first;
-        private V second;
-        public Pair(U first, V second){
-                this.first = first;
-                this.second = second;
-        }
-        public U getFirst(){return first;}
-        public V getSecond(){return second;}
-        public int compareTo(Pair<U,V> other){
-        return this.first.compareTo(other.first);
-        }
 }
