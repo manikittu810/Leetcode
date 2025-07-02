@@ -1,26 +1,20 @@
 class Solution {
     public int trap(int[] a) {
-        int maxleftnow = a[0],maxrightnow = a[a.length-1];
-        int l = 0, r= a.length-1,sum =0;
-
+        int l=0,r= a.length-1;
+        int max_left_so_far = a[l];
+        int max_right_so_far = a[r];
+        int res =0;
         while(l<r){
-            if(maxleftnow<=maxrightnow){
+            if(max_left_so_far<=max_right_so_far){
                 l++;
-               maxleftnow = Math.max(maxleftnow,a[l]);
-                int n = maxleftnow - a[l];
-                if(n>0){
-                    sum+=n;
-                }
+                max_left_so_far = Math.max(max_left_so_far,a[l]);
+                res+=max_left_so_far-a[l];
             }else{
-                r--;
-                maxrightnow = Math.max(a[r],maxrightnow);
-                int n = maxrightnow - a[r];
-                if(n>0){
-                    sum+=n;
-                }
+                 r--;
+                max_right_so_far = Math.max(max_right_so_far,a[r]);
+                res+=max_right_so_far-a[r];
             }
         }
-        return sum;
-        
+        return res;
     }
 }
