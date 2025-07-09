@@ -1,19 +1,28 @@
 class Solution {
     public List<List<String>> groupAnagrams(String[] s) {
-
         Map<String, List<String>> map = new HashMap<>();
-
         for(int i=0;i<s.length;i++){
-
-            char[]ch = s[i].toCharArray();//e,a,t
-
-            Arrays.sort(ch);//a,e,t
-            String s1 = String.valueOf(ch);//aet
-            if(!map.containsKey(s1)){//aet
-                map.put(s1, new ArrayList<>());//aet,[]
+            String str = s[i];
+            char[]ch = str.toCharArray();
+            Arrays.sort(ch);
+            str = String.valueOf(ch);
+            System.out.println(str);
+            if(!map.containsKey(str)){
+                map.put(str, new ArrayList<>());//[aet,[]]
             }
-            map.get(s1).add(s[i]);//[eat]
+            map.get(str).add(s[i]);
         }
         return new ArrayList<>(map.values());
     }
 }
+/*
+"eat"
+char[] ch = s[i].toCharArray();// ['e','a','t']
+sort the ch
+convert that sorted ch into a string again->key
+Map<String, List<String>> map ;
+<"aet",[]>
+if aet then add the current unmodified string from the string array into the existing sorted strings list in the map
+<"aet",[eat]>
+
+ */
