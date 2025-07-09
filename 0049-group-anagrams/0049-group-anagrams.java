@@ -6,7 +6,6 @@ class Solution {
             char[]ch = str.toCharArray();
             Arrays.sort(ch);
             str = String.valueOf(ch);
-            System.out.println(str);
             if(!map.containsKey(str)){
                 map.put(str, new ArrayList<>());//[aet,[]]
             }
