@@ -1,43 +1,50 @@
 class Solution {
     public boolean isValidSudoku(char[][] board) {
-        int ROW = board.length;
-        int COL = board[0].length;
-
-                    for(int i =0;i<ROW;i++){
-                                    Set<Character> s = new HashSet<>();
-         for(int j=0;j<COL;j++){
-                if(s.contains(board[i][j])){return false;}
-                if(board[i][j] =='.'){continue;}
-                s.add(board[i][j]);
+        
+        // for row
+        for(int i =0;i<9;i++){
+            Set<Character> rowSet = new HashSet<>();
+            for(int j=0;j<9;j++){
+                if(rowSet.contains(board[i][j])) return false;
+                if(board[i][j]=='.') continue;
+                if(!rowSet.contains(board[i][j])){
+                    rowSet.add(board[i][j]);
+                }
             }
         }
 
-        for(int j=0;j<COL;j++){
-            Set<Character> s = new HashSet<>();
-            for(int i =0;i<ROW;i++){
-                if(s.contains(board[i][j])){return false;}
-                if(board[i][j] =='.'){continue;}
-                s.add(board[i][j]);
-                } 
+        //for column
+        for(int j=0;j<9;j++){
+            Set<Character> colSet = new HashSet<>();
+            for(int i=0;i<9;i++){
+                if(board[i][j] == '.') continue;
+                if(colSet.contains(board[i][j])){
+                    return false;
+                }else{
+                    colSet.add(board[i][j]);
+                }
             }
+        }
 
-        for(int smallGrid=0;smallGrid<9;smallGrid++){
+        //now check the same for small 3*3 grids
+
+        for(int i=0;i<9;i++){
             Set<Character> smallGrids = new HashSet<>();
-                int i = (smallGrid/3)*3;
-                int j = (smallGrid%3)*3;
-                for(int r=0;r<3;r++){
-                    for(int c=0;c<3;c++){
-                        int newR = i+r;
-                        int newC = j+c;
-                        if(smallGrids.contains(board[newR][newC])){
-                            return false;
-                        }
-                        if(board[newR][newC]=='.'){continue;}
-                        if(!smallGrids.contains(board[newR][newC])){smallGrids.add(board[newR][newC]);}
+                int newR = (i/3)*3;//9/3 = 3*3 = 9
+                int newCol = (i%3)*3;//9%3 = 0*3 = 0
+                for(int row = 0;row<3;row++){
+                    for(int col=0;col<3;col++){
+                        if(board[row+newR][col+newCol] == '.') continue;
+                if(smallGrids.contains(board[row+newR][col+newCol])){
+                    return false;
+                }else{
+                    smallGrids.add(board[row+newR][col+newCol]);
+                }
                     }
                 }
             }
         return true;
 
         }
+        
     }
