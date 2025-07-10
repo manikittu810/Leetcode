@@ -1,32 +1,40 @@
 class Solution {
     public boolean checkInclusion(String s1, String s2) {
-        if(s1.length()>s2.length()){
-            return false;
-        }
+        if(s1.length() > s2.length()) {return false;}
 
-        int[] countArr1 = new int[26];
-        int[] countArr2 = new int[26];
+        int[]count1 = new int[26];
+        int[]count2 = new int[26];
 
         for(int i=0;i<s1.length();i++){
-            countArr1[s1.charAt(i)-'a']++;
-            countArr2[s2.charAt(i)-'a']++;
+            count1[s1.charAt(i)-'a']++;
+            count2[s2.charAt(i)-'a']++;
         }
 
-        for(int i=0;i<s2.length()-s1.length();i++){
-            if(matchFound(countArr1,countArr2)){return true;}
-
-            countArr2[s2.charAt(i+s1.length())-'a']++;
-            countArr2[s2.charAt(i)-'a']--;
-        }
-        return matchFound(countArr1,countArr2);
-    }
-
-    private boolean matchFound(int[] s1,int[] s2){
+        int matched = 0;
+        
         for(int i=0;i<26;i++){
-            if(s1[i]!=s2[i]){
-                return false;
-            }
+            if(count1[i] == count2[i]){matched++;}
         }
-        return true;
+
+        int l=0;
+
+        for(int r=s1.length();r<s2.length();r++){
+
+            if(matched==26){
+                return true;
+            }
+
+            int idx = s2.charAt(r)-'a';
+            count2[idx]++;
+            if(count1[idx] == count2[idx]){matched++;}
+            else if(count1[idx]+1 == count2[idx]){matched--;}
+
+            idx = s2.charAt(l)-'a';
+            count2[idx]--;
+            if(count1[idx]==count2[idx]){matched++;}
+            else if(count1[idx]-1 == count2[idx]){matched--;}
+            l++;
+        }
+        return matched == 26;
     }
 }
