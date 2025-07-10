@@ -30,15 +30,17 @@ class Solution {
 
         for(int i=0;i<9;i++){
             Set<Character> smallGrids = new HashSet<>();
-                int newR = (i/3)*3;//9/3 = 3*3 = 9
+                int newRow = (i/3)*3;//9/3 = 3*3 = 9
                 int newCol = (i%3)*3;//9%3 = 0*3 = 0
                 for(int row = 0;row<3;row++){
                     for(int col=0;col<3;col++){
-                        if(board[row+newR][col+newCol] == '.') continue;
-                if(smallGrids.contains(board[row+newR][col+newCol])){
+                        int j = newRow+row;
+                        int k = newCol + col;
+                        if(board[j][k] == '.') continue;
+                if(smallGrids.contains(board[j][k])){
                     return false;
                 }else{
-                    smallGrids.add(board[row+newR][col+newCol]);
+                    smallGrids.add(board[j][k]);
                 }
                     }
                 }
