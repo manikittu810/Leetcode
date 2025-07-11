@@ -16,7 +16,7 @@ class Solution {
                     st.push(c);
                 }
             }
-        return (st.isEmpty()) ? true : false;
+        return st.isEmpty();
 
         }
 }
