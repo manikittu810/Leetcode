@@ -1,27 +1,33 @@
 class Solution {
     public List<String> generateParenthesis(int n) {
-
         List<String> l = new ArrayList<>();
-        if(n == 0){
+        if(n==0){
             return l;
         }
-        backTrack(l,n,new StringBuilder(),0,0);
+        StringBuilder sb = new StringBuilder();
+        backTrack(0,0,n,l,sb);
         return l;
     }
-    private void backTrack(List<String> l,int n,StringBuilder sb, int openCount,int closedCount){
+    private void backTrack(int openBracket,
+     int closedBracket,int n,
+     List<String>l,
+     StringBuilder sb){
+
         if(sb.length() == 2*n){
             l.add(sb.toString());
-            return;
+            return ;
         }
-    if(openCount < n){
-        sb.append('(');
-        backTrack(l,n,sb,openCount+1,closedCount);
-        sb.deleteCharAt(sb.length()-1);
-    }
-    if(closedCount < openCount){
-        sb.append(')');
-        backTrack(l,n,sb,openCount,closedCount+1);
-        sb.deleteCharAt(sb.length()-1);
-    }
+
+        if(openBracket < n){
+            sb.append('(');
+            backTrack(openBracket+1,closedBracket,n,l,sb);
+            sb.deleteCharAt(sb.length()-1);
+        }
+
+        if(closedBracket < openBracket){
+            sb.append(')');
+            backTrack(openBracket,closedBracket+1,n,l,sb);
+            sb.deleteCharAt(sb.length()-1);
+        }
     }
 }
