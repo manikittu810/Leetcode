@@ -13,7 +13,7 @@ class Solution {
         //required size of the map or string is the size of the hashmap
         int requiredSize = mapT.size();
 
-        int l=0,minLen=Integer.MAX_VALUE;
+        int l=0;
         int[]ans={-1,0,0};
         Map<Character,Integer> mapS = new HashMap<>();
         int subStringFormedSize  = 0;
