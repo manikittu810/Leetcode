@@ -4,30 +4,34 @@ class Solution {
         if(n==0){
             return l;
         }
-        StringBuilder sb = new StringBuilder();
-        backTrack(0,0,n,l,sb);
+        Stack<Character> st = new Stack<>();
+        backTrack(0,0,n,l,st);
         return l;
     }
     private void backTrack(int openBracket,
      int closedBracket,int n,
      List<String>l,
-     StringBuilder sb){
+     Stack<Character> st){
 
-        if(sb.length() == 2*n){
+        if(st.size() == 2*n){
+            StringBuilder sb = new StringBuilder();
+            for(Character c : st){
+            sb.append(c);
+            }
             l.add(sb.toString());
             return ;
         }
 
         if(openBracket < n){
-            sb.append('(');
-            backTrack(openBracket+1,closedBracket,n,l,sb);
-            sb.deleteCharAt(sb.length()-1);
+            st.push('(');
+            backTrack(openBracket+1,closedBracket,n,l,st);
+            st.pop();
         }
 
         if(closedBracket < openBracket){
-            sb.append(')');
-            backTrack(openBracket,closedBracket+1,n,l,sb);
-            sb.deleteCharAt(sb.length()-1);
+            st.push(')');
+            backTrack(openBracket,closedBracket+1,n,l,st);
+            st.pop();
         }
     }
 }
