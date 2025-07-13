@@ -3,33 +3,19 @@ class Solution {
         int row = mat.length;
         int col = mat[0].length;
 
-        int top = 0, bottom = row-1;
+        int l = 0, r = row*col-1;
 
-        while(top<=bottom){
-            int mid = top +(bottom-top)/2;
-
-            if(t>=mat[mid][0] && t<= mat[mid][col-1]){
-                return bs(mat[mid], 0, col-1, t);
-            }else if(mat[mid][0]<t){
-                top=mid+1;
-            }else{
-                bottom = mid-1;
-            }
-        }
-        return false;
-    }
-    private boolean bs(int[]a, int i, int j, int t){
-        while(i<=j){
-            int mid = i+(j-i)/2;
-            if(a[mid] == t){
+        while(l<=r){
+            int mid = l +(r-l)/2;
+            int val = mat[mid/col][mid%col];
+            if(val==t){
                 return true;
-            }else if(a[mid]<t){
-                i = mid+1;
+            }else if(val<t){
+                l=l+1;
             }else{
-                j=mid-1;
+                r = r-1;
             }
         }
         return false;
     }
-    
 }
