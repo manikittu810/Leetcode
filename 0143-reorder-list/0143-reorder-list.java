@@ -10,45 +10,44 @@
  */
 class Solution {
     public void reorderList(ListNode head) {
-        if(head == null){
-            return ;
-        }
+        if(head == null){return ;}
+
         int count = 0;
+
         for(ListNode cur = head;cur!=null;cur=cur.next){
             count++;
         }
+        int limit = 0;
 
-        ListNode slow = head;
-
+        ListNode ptr = head;
+        
         for(int i=0;i<count/2;i++){
-            slow = slow.next;
+            ptr = ptr.next;
         }
+        ptr.next = reverse(ptr.next);
 
-        ListNode secondHalf = reverse(slow.next);
+        ListNode secondList = ptr.next;//4->3->null
 
-        slow.next = null;
+        ptr.next = null;
 
-        ListNode firstHalf = head;
+        ListNode firstList = head;
 
-        while(firstHalf!=null && secondHalf!=null){
-            ListNode temp = firstHalf.next;
-            firstHalf.next = secondHalf;
-            firstHalf = firstHalf.next;
-            secondHalf = secondHalf.next;
-            firstHalf.next = temp;
-            firstHalf = firstHalf.next;
+        while(firstList!=null && secondList!=null){
+            ListNode temp = firstList.next;
+            firstList.next = secondList;
+            firstList = firstList.next;
+            secondList= secondList.next;
+            firstList.next = temp;
+            firstList= firstList.next;
         }
     }
-
-    public ListNode reverse(ListNode head){
-
-        if(head==null){
-            return null;
+    private ListNode reverse(ListNode head){
+        if(head == null){
+            return head;
         }
-
-        ListNode cur = head;
+        ListNode Next = null;
         ListNode prev = null;
-        ListNode Next =null;
+        ListNode cur = head;
 
         while(cur!=null){
             Next = cur.next;
