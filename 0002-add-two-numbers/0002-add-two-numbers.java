@@ -9,31 +9,40 @@
  * }
  */
 class Solution {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        if(l1 == null) return l2;
-        if(l2 == null) return l1;
-        ListNode dummy = new ListNode(-1);
-        ListNode newNode = dummy;
+    public ListNode addTwoNumbers(ListNode list1, ListNode list2) {
+        if(list1==null){
+            return list2;
+        }
+        if(list2==null){
+            return list1;
+        }
+
         int carry = 0;
-        while(l1!=null || l2!=null){
 
-            int n1 = (l1!=null)  ? l1.val : 0;
-            int n2 = (l2!=null)  ? l2.val : 0;
+        ListNode dummy = new ListNode(-1);
 
-            int sum = n1+n2+carry;
+        ListNode cur = dummy;
+
+        while(list1!=null || list2!=null){
+            int a = (list1!=null) ? list1.val : 0;
+            int b = (list2!=null) ? list2.val : 0;
+
+            int sum = a+b+carry;
             carry = sum/10;
-            int addNum = sum%10;
-
-            newNode.next = new ListNode(addNum);
-            newNode = newNode.next;
-
-            if(l1!=null) l1 = l1.next;
-            if(l2!=null) l2 = l2.next;
-
+            int numberToStore = sum%10;
+            System.out.println(numberToStore);
+            dummy.next = new ListNode(numberToStore);
+            dummy = dummy.next;
+            if(list1!=null){
+                list1=list1.next;
+            }
+            if(list2!=null){
+                list2=list2.next;
+            }
         }
         if(carry!=0){
-            newNode.next = new ListNode(carry);
+            dummy.next= new ListNode(carry);
         }
-        return dummy.next;
+        return cur.next;
     }
 }
