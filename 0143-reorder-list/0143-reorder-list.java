@@ -13,38 +13,32 @@ class Solution {
         if(head == null){return ;}
 
         int count = 0;
-
-        for(ListNode cur = head;cur!=null;cur=cur.next){
+        for(ListNode cur=head;cur!=null;cur=cur.next){
             count++;
         }
-        ListNode ptr = head;
-        
+        ListNode cur=head;
         for(int i=0;i<count/2;i++){
-            ptr = ptr.next;
+            cur=cur.next;
         }
-        ListNode secondList =reverse(ptr.next);;//4->3->null
-
-        ptr.next = null;
-
+        ListNode secondList = reverse(cur.next);
+        cur.next = null;
         ListNode firstList = head;
-
         while(firstList!=null && secondList!=null){
             ListNode temp = firstList.next;
             firstList.next = secondList;
-            firstList = firstList.next;
-            secondList= secondList.next;
+            firstList=firstList.next;
+            secondList=secondList.next;
             firstList.next = temp;
-            firstList= firstList.next;
+            firstList=firstList.next;
         }
     }
     private ListNode reverse(ListNode head){
         if(head == null){
-            return null;
+            return head;
         }
-        ListNode Next = null;
         ListNode prev = null;
+        ListNode Next = null;
         ListNode cur = head;
-
         while(cur!=null){
             Next = cur.next;
             cur.next = prev;
