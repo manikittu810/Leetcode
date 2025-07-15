@@ -13,20 +13,18 @@ class Solution {
         if(head == null){
             return head;
         }
-        ListNode dummy = new ListNode(-1);
-        dummy.next = head;
 
+        ListNode dummy = new ListNode(-1); 
+        dummy.next = head;
         ListNode fptr = dummy;
 
         for(int i=0;i<n;i++){
-            fptr = fptr.next;//1->2->fptr
+            fptr = fptr.next;
         }
-
         ListNode sptr = dummy;
-
         while(fptr.next!=null){
-            sptr = sptr.next;//1 2 3
-            fptr= fptr.next;//3 4 5
+            sptr = sptr.next;
+            fptr = fptr.next;
         }
         sptr.next = sptr.next.next;
         return dummy.next;
