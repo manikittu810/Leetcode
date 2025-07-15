@@ -30,7 +30,6 @@ class Solution {
             int sum = a+b+carry;
             carry = sum/10;
             int numberToStore = sum%10;
-            System.out.println(numberToStore);
             dummy.next = new ListNode(numberToStore);
             dummy = dummy.next;
             if(list1!=null){
