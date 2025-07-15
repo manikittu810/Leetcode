@@ -17,16 +17,12 @@ class Solution {
         for(ListNode cur = head;cur!=null;cur=cur.next){
             count++;
         }
-        int limit = 0;
-
         ListNode ptr = head;
         
         for(int i=0;i<count/2;i++){
             ptr = ptr.next;
         }
-        ptr.next = reverse(ptr.next);
-
-        ListNode secondList = ptr.next;//4->3->null
+        ListNode secondList =reverse(ptr.next);;//4->3->null
 
         ptr.next = null;
 
