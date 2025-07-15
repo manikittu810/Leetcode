@@ -9,38 +9,34 @@
  * }
  */
 class Solution {
-    public ListNode addTwoNumbers(ListNode list1, ListNode list2) {
-        if(list1==null){
-            return list2;
-        }
-        if(list2==null){
-            return list1;
-        }
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        if(l1==null){return l2;}
+        if(l2==null){return l1;}
+
+        ListNode cur = new ListNode(-1);
+        ListNode dummy = cur;
 
         int carry = 0;
 
-        ListNode dummy = new ListNode(-1);
-
-        ListNode cur = dummy;
-
-        while(list1!=null || list2!=null){
-            int a = (list1!=null) ? list1.val : 0;
-            int b = (list2!=null) ? list2.val : 0;
+        while(l1!=null || l2!=null){
+            int a = (l1!=null) ? l1.val : 0;
+            int b = (l2!=null) ? l2.val : 0;
 
             int sum = a+b+carry;
+
             carry = sum/10;
-            int numberToStore = sum%10;
-            dummy.next = new ListNode(numberToStore);
-            dummy = dummy.next;
-            if(list1!=null){
-                list1=list1.next;
-            }
-            if(list2!=null){
-                list2=list2.next;
-            }
+
+            int num = sum%10;
+
+            dummy.next = new ListNode(num);
+
+            dummy=dummy.next;
+
+            if(l1!=null){l1=l1.next;}
+            if(l2!=null){l2=l2.next;}
         }
         if(carry!=0){
-            dummy.next= new ListNode(carry);
+            dummy.next = new ListNode(carry);
         }
         return cur.next;
     }
