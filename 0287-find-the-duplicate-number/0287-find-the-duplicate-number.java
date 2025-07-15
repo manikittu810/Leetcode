@@ -1,19 +1,16 @@
 class Solution {
-    public int findDuplicate(int[] nums) {
+    public int findDuplicate(int[] a) {
         int fptr = 0;
         int sptr = 0;
-
         do{
-            sptr = nums[sptr];
-            fptr = nums[nums[fptr]];
+            sptr = a[sptr];
+            fptr = a[a[fptr]];
         }while(sptr!=fptr);
-
         sptr = 0;
-        while(sptr != fptr){
-            sptr = nums[sptr];
-            fptr = nums[fptr];
+        while(sptr!=fptr){
+            sptr = a[sptr];
+            fptr = a[fptr];
         }
         return sptr;
-
     }
 }
