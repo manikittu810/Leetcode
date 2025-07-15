@@ -39,7 +39,7 @@ class Solution {
     }
     private ListNode reverse(ListNode head){
         if(head == null){
-            return head;
+            return null;
         }
         ListNode Next = null;
         ListNode prev = null;
