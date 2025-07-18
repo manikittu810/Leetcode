@@ -18,27 +18,22 @@ class Solution {
         if(subRoot == null){
             return true;
         }
-        if(root == null){
+        if(root==null){
             return false;
         }
-        if(helper(root,subRoot)){
+        if(isSameTree(root,subRoot)){
             return true;
         }
-        return isSubtree(root.left,subRoot) || 
-        isSubtree(root.right,subRoot);
+
+        return isSubtree(root.left,subRoot) || isSubtree(root.right,subRoot);
     }
-    private boolean helper(TreeNode root, TreeNode subRoot){
-        if(root == null && subRoot == null){
+    private boolean isSameTree(TreeNode p,TreeNode q){
+        if(p==null && q==null){
             return true;
         }
-        if(root==null || subRoot==null){
+        if(p==null ||q==null || p.val!=q.val){
             return false;
         }
-        if(root.val != subRoot.val){
-            return false;
-        }
-        boolean ls = helper(root.left,subRoot.left);
-        boolean rs = helper(root.right,subRoot.right);
-        return ls && rs;
+        return (isSameTree(p.left,q.left) && isSameTree(p.right,q.right));
     }
 }
