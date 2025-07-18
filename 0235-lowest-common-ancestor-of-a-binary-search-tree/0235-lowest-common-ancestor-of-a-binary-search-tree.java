@@ -15,7 +15,7 @@ class Solution {
                 root = root.left;
             }else if(p.val>root.val && q.val>root.val){
                 root=root.right;
-            }else{
+            }else{ //split point from the common ancestor
                 return root;
             }
         }
