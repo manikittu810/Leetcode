@@ -19,20 +19,14 @@ class Solution {
             return null;
         }
 
-        Queue<TreeNode> q = new LinkedList<>();
+        TreeNode temp = root.left;
+        root.left = root.right;
+        root.right = temp;
 
-        q.offer(root);
-        while(!q.isEmpty()){
+        invertTree(root.left);
+        invertTree(root.right);
 
-            TreeNode cur = q.poll();
-
-            TreeNode temp = cur.left;
-            cur.left = cur.right;
-            cur.right = temp;
-
-            if(cur.left!=null) {q.offer(cur.left);}
-            if(cur.right!=null){q.offer(cur.right);}
-        }
         return root;
+        
     }
 }
