@@ -16,21 +16,21 @@
 class Solution {
     private int count;
     public int goodNodes(TreeNode root) {
-    count =0;
-    int maxVal = Integer.MIN_VALUE;
-    helper(root,maxVal);
+        count = 0;
+        int maxValue = Integer.MIN_VALUE;
+        dfs(root,maxValue);
         return count;
     }
-    private void helper(TreeNode root,int maxVal){
-        if(root ==null){
+    private void dfs(TreeNode root, int maxValue){
+        if(root == null){
             return ;
         }
-        if(root.val >=maxVal){
-            count+=1;
-            maxVal = root.val;
-        }
-        helper(root.left,maxVal);
-        helper(root.right,maxVal);
 
+        if(root.val>=maxValue){
+            count+=1;
+            maxValue = root.val;
+        }
+        dfs(root.left,maxValue);
+        dfs(root.right,maxValue);
     }
 }
