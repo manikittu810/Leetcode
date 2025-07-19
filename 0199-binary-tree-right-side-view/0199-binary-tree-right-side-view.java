@@ -20,15 +20,19 @@ class Solution {
         if(root == null){
             return l;
         }
+
         Queue<TreeNode> q = new LinkedList<>();
 
         q.offer(root);
 
         while(!q.isEmpty()){
+
             int n = q.size();
 
             for(int i=0;i<n;i++){
+
                 TreeNode cur = q.poll();
+
                 if(i==0){
                     l.add(cur.val);
                 }
@@ -36,6 +40,7 @@ class Solution {
                 if(cur.right!=null){
                     q.offer(cur.right);
                 }
+
                 if(cur.left!=null){
                     q.offer(cur.left);
                 }
