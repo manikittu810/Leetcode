@@ -15,8 +15,8 @@
  */
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
-        
         List<Integer> l = new ArrayList<>();
+
         if(root == null){
             return l;
         }
@@ -25,13 +25,10 @@ class Solution {
         q.offer(root);
 
         while(!q.isEmpty()){
-
             int n = q.size();
 
             for(int i=0;i<n;i++){
-
                 TreeNode cur = q.poll();
-
                 if(i==0){
                     l.add(cur.val);
                 }
