@@ -214,6 +214,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0076-minimum-window-substring](https://github.com/manikittu810/Leetcode/tree/master/0076-minimum-window-substring) |
 | [0079-word-search](https://github.com/manikittu810/Leetcode/tree/master/0079-word-search) |
 | [0125-valid-palindrome](https://github.com/manikittu810/Leetcode/tree/master/0125-valid-palindrome) |
+| [0131-palindrome-partitioning](https://github.com/manikittu810/Leetcode/tree/master/0131-palindrome-partitioning) |
 | [0242-valid-anagram](https://github.com/manikittu810/Leetcode/tree/master/0242-valid-anagram) |
 | [0257-binary-tree-paths](https://github.com/manikittu810/Leetcode/tree/master/0257-binary-tree-paths) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/manikittu810/Leetcode/tree/master/0297-serialize-and-deserialize-binary-tree) |
@@ -788,6 +789,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0078-subsets](https://github.com/manikittu810/Leetcode/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/manikittu810/Leetcode/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/manikittu810/Leetcode/tree/master/0090-subsets-ii) |
+| [0131-palindrome-partitioning](https://github.com/manikittu810/Leetcode/tree/master/0131-palindrome-partitioning) |
 | [0257-binary-tree-paths](https://github.com/manikittu810/Leetcode/tree/master/0257-binary-tree-paths) |
 | [0494-target-sum](https://github.com/manikittu810/Leetcode/tree/master/0494-target-sum) |
 | [0800-letter-case-permutation](https://github.com/manikittu810/Leetcode/tree/master/0800-letter-case-permutation) |
@@ -815,6 +817,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0070-climbing-stairs](https://github.com/manikittu810/Leetcode/tree/master/0070-climbing-stairs) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/manikittu810/Leetcode/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/manikittu810/Leetcode/tree/master/0124-binary-tree-maximum-path-sum) |
+| [0131-palindrome-partitioning](https://github.com/manikittu810/Leetcode/tree/master/0131-palindrome-partitioning) |
 | [0416-partition-equal-subset-sum](https://github.com/manikittu810/Leetcode/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/manikittu810/Leetcode/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/manikittu810/Leetcode/tree/master/0518-coin-change-ii) |
