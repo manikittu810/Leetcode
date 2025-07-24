@@ -1,29 +1,36 @@
 class Solution {
     public int numIslands(char[][] grid) {
-        int r = grid.length;
-        int c = grid[0].length;
+        int n = grid.length;
+        int m = grid[0].length;
         int count =0;
-        boolean [][]visited = new boolean[r][c];
-        for(int i=0;i<r;i++){
-            for(int j=0;j<c;j++){
-                if(!visited[i][j] && grid[i][j]=='1'){
-                    dfs(grid, visited,r,c,i,j);
+        boolean [][]visited = new boolean[n][m];
+        Queue<int[]> q = new LinkedList<>();
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(!visited[i][j] && grid[i][j] == '1'){
+                    bfs(q,count,visited,grid,i,j,n,m);
                     count++;
                 }
-            } 
+            }
         }
         return count;
     }
-
-private void dfs(char[][]grid, boolean[][]visited, int r,int c,int i, int j){
-        if(i<0 || j<0 || i>=r || j>=c || visited[i][j] || grid[i][j] == '0'){
-            return ;
-            }
+    private void bfs(Queue<int[]> q,int count,boolean[][]visited,char[][]grid,int i,int j,int r,int c){
             visited[i][j] = true;
-            dfs(grid,visited,r,c,i+1,j);
-            dfs(grid,visited,r,c,i-1,j);
-            dfs(grid,visited,r,c,i,j+1);
-            dfs(grid,visited,r,c,i,j-1);
-
+            q.offer(new int[]{i,j});
+            int[][]directions = {{-1,0},{1,0},{0,1},{0,-1}};
+            while(!q.isEmpty()){
+                int[] cur = q.poll();
+                for(int[]d : directions){
+                    int newRow = d[0]+cur[0];
+                    int newCol = d[1]+cur[1];
+                    if(newRow>=0 && newCol>=0 && newRow<r 
+                    && newCol<c && !visited[newRow][newCol] &&
+                    grid[newRow][newCol]=='1'){
+                        visited[newRow][newCol] = true;
+                        q.offer(new int[]{newRow,newCol});
+                    }
+                }
+            }
     }
 }
