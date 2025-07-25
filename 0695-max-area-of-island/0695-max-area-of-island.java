@@ -1,30 +1,41 @@
 class Solution {
     public int maxAreaOfIsland(int[][] grid) {
-        int r = grid.length;
-        int c = grid[0].length;
-        boolean [][]visited = new boolean[r][c];
+        int n = grid.length;
+        int m = grid[0].length;
+        Queue<int[]> q = new LinkedList<>();
+        boolean[][]visited = new boolean[n][m];
         int max = 0;
-        for(int i=0;i<r;i++){
-            
-            for(int j=0;j<c;j++){
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
                 if(!visited[i][j] && grid[i][j]==1){
-                    int area = dfs(grid,visited,i,j,r,c);
+                    q.offer(new int[]{i,j});
+                    int area = bfs(grid,visited,i,j,n,m,q);
                     max = Math.max(max,area);
                 }
             }
         }
         return max;
     }
-    private int dfs(int[][]grid, boolean [][]visited, int i , int j, int r, int c){
-        if(i<0 || i>=r || j<0 || j>=c || visited[i][j] || grid[i][j]!=1){
-            return 0;//0 beacuse there's no area here.
-        }
+    private int bfs(int[][]grid,boolean[][]visited,
+    int i,int j,int n,int m,Queue<int[]>q){
         visited[i][j] = true;
         int area=1;
-         area+=dfs(grid,visited,i+1,j,r,c);
-         area+=dfs(grid,visited,i-1,j,r,c);
-         area+=dfs(grid,visited,i,j+1,r,c);
-         area+=dfs(grid,visited,i,j-1,r,c);
-         return area;
+        int[][]directions = {{1,0},{-1,0},{0,1},{0,-1}};
+        while(!q.isEmpty()){
+            int []cur = q.poll();
+            for(int[]d : directions){
+                int newRow = d[0]+cur[0];
+                int newCol = d[1]+cur[1];
+                if(newRow>=0 && newCol>=0 
+                && newRow<n && newCol<m 
+                && !visited[newRow][newCol] 
+                && grid[newRow][newCol]==1){
+                    visited[newRow][newCol] = true;
+                    q.offer(new int[]{newRow,newCol});
+                    area++;
+                }
+            }
+        }
+        return area;
     }
 }
