@@ -24,18 +24,18 @@ class Solution {
             return null;
         }
         Map<Node,Node> map = new HashMap<>();
-        map.put(node, new Node(node.val));
+        map.put(node,new Node(node.val));
         Queue<Node> q = new LinkedList<>();
         q.offer(node);
         while(!q.isEmpty()){
-            Node originalNode = q.poll();
-            for(Node u : originalNode.neighbors){
-                if(!map.containsKey(u)){
-                    map.put(u,new Node(u.val));
-                    q.offer(u);
-                }
-                map.get(originalNode).neighbors.add(map.get(u));
+            Node cur = q.poll();
+            for(Node u : cur.neighbors){
+            if(!map.containsKey(u)){
+                map.put(u,new Node(u.val));
+                q.offer(u);
             }
+            map.get(cur).neighbors.add(map.get(u));
+        }
         }
         return map.get(node);
     }
