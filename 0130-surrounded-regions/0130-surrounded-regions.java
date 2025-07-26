@@ -1,17 +1,18 @@
 class Solution {
     private int R,C;
     public void solve(char[][] board) {
-        if(board == null || board.length == 0 || board[0].length == 0) return ;
-        R = board.length;
-        C = board[0].length;
+        R=board.length;
+        C=board[0].length;
+
         for(int i=0;i<R;i++){
-            if(board[i][0]=='O'){
+            if(board[i][0] == 'O'){
                 markItVisited(board,i,0);
             }
-            if(board[i][C-1] == 'O'){
+            if(board[i][C-1]=='O'){
                 markItVisited(board,i,C-1);
             }
         }
+
         for(int j=0;j<C;j++){
             if(board[0][j]=='O'){
                 markItVisited(board,0,j);
@@ -30,20 +31,16 @@ class Solution {
                 }
             }
         }
-
-
-
-        
     }
-    private void markItVisited(char[][]board,int curRow,int curCol){
-        if(curRow<0 || curCol<0 ||curRow>=R || curCol>=C || board[curRow][curCol]!='O'){
-            return;
+    private void markItVisited(char[][]board,int i,int j){
+        if(i<0 || j<0 || j>=C || i>=R || board[i][j]!='O'){
+            return ;
         }
-        board[curRow][curCol] = 'M';
-        markItVisited(board,curRow+1,curCol);
-        markItVisited(board,curRow-1,curCol);
-        markItVisited(board,curRow,curCol+1);
-        markItVisited(board,curRow,curCol-1);
+        board[i][j] = 'M';
+        markItVisited(board,i+1,j);
+        markItVisited(board,i-1,j);
+        markItVisited(board,i,j+1);
+        markItVisited(board,i,j-1);
 
     }
 }
