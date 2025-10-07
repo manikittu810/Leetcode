@@ -3,13 +3,15 @@ class Solution {
         if(s.length()!=t.length()){
             return false;
         }
-        int[] count = new int[26];
-        for(int i=0;i<s.length();i++){
-            count[s.charAt(i)-'a']++;
+        int []count = new int[26];
+
+        for(char c : s.toCharArray()){
+            count[c-'a']++;
         }
-        for(int i=0;i<t.length();i++){
-            count[t.charAt(i)-'a']--;
-            if(count[t.charAt(i)-'a']<0){
+
+        for(char c : t.toCharArray()){
+            count[c-'a']--;
+            if(count[c-'a']<0){
                 return false;
             }
         }
